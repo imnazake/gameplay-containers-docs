@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,8 +20,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="gc.ico"/></td>
   <td id="projectalign">
-   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.1</span>
    </div>
   </td>
  </tr>
@@ -51,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_d.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -97,31 +78,31 @@ $(document).ready(function(){initNavTree('functions_d.html',''); initResizable()
 <li>DataObjectClass&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot_fragment___u_i.html#a5dae0cc34036123ba76f7fe67c59b447">UGameplayContainerSlotFragment_UI</a></li>
 <li>DeactivateSlot()&#160;:&#160;<a class="el" href="class_u_hotbar_component.html#a609214ae19f0cdf47acc31b4489b99b6">UHotbarComponent</a></li>
 <li>DeactivationSound&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot_fragment___u_i.html#a686116492a2d1d61b0ae98c2ecf1070a">UGameplayContainerSlotFragment_UI</a></li>
-<li>DefaultBrush&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot_fragment___u_i.html#aec5db65673f86ed8ad69c41790127dcd">UGameplayContainerSlotFragment_UI</a>, <a class="el" href="class_u_gameplay_item_fragment___u_i.html#a8e41c6a7ba8650a7afb84d1b5385b49b">UGameplayItemFragment_UI</a></li>
+<li>DefaultBrush&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot_fragment___u_i.html#aec5db65673f86ed8ad69c41790127dcd">UGameplayContainerSlotFragment_UI</a>, <a class="el" href="class_u_gameplay_item_fragment___u_i.html#a8e41c6a7ba8650a7afb84d1b5385b49b">UGameplayItemFragment_UI</a>, <a class="el" href="class_u_gameplay_item_rarity.html#a23e1895b75305a07e71db0e9bdae180a">UGameplayItemRarity</a></li>
 <li>Deinitialize()&#160;:&#160;<a class="el" href="class_u_gameplay_container_subsystem.html#a60cc5290d64ec9fea259cc55b3791c68">UGameplayContainerSubsystem</a></li>
-<li>Description&#160;:&#160;<a class="el" href="class_u_gameplay_container_fragment___u_i.html#a006c33339421ab128a3979c20cca669e">UGameplayContainerFragment_UI</a>, <a class="el" href="class_u_gameplay_item_fragment___u_i.html#ad8ad13e98f76649f59025c74c1079b14">UGameplayItemFragment_UI</a></li>
-<li>DestinationContainer&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___transfer_item.html#a96c825afaeb2167f32421a8fbebb700e">FGameplayAbilityTargetData_TransferItem</a>, <a class="el" href="struct_f_gameplay_container_request.html#aa51d19e7ef9014f4210932e720900a82">FGameplayContainerRequest</a>, <a class="el" href="class_u_gameplay_container_task___transfer_item.html#a4b67aabc01b34096451ef5b0b6b050be">UGameplayContainerTask_TransferItem</a></li>
+<li>Description&#160;:&#160;<a class="el" href="class_u_gameplay_container_fragment___u_i.html#a006c33339421ab128a3979c20cca669e">UGameplayContainerFragment_UI</a>, <a class="el" href="class_u_gameplay_item_fragment___u_i.html#ad8ad13e98f76649f59025c74c1079b14">UGameplayItemFragment_UI</a>, <a class="el" href="class_u_gameplay_item_rarity.html#ac332eaf65558fada5bca20ac90f649ed">UGameplayItemRarity</a></li>
+<li>DestinationContainer&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___transfer_item.html#a96c825afaeb2167f32421a8fbebb700e">FGameplayAbilityTargetData_TransferItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___transfer_items.html#a6d895c7cb9ee173af0ca3f58e5e7ad95">FGameplayAbilityTargetData_TransferItems</a>, <a class="el" href="struct_f_gameplay_container_request.html#aa51d19e7ef9014f4210932e720900a82">FGameplayContainerRequest</a>, <a class="el" href="class_u_gameplay_container_task___transfer_item.html#a4b67aabc01b34096451ef5b0b6b050be">UGameplayContainerTask_TransferItem</a>, <a class="el" href="class_u_gameplay_container_task___transfer_items.html#acfa3812490b0944bd7b73c0388d83a4e">UGameplayContainerTask_TransferItems</a></li>
 <li>DestinationDataObject&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot___drag_drop_operation.html#abed2d08d21e1d97f170ae41730224302">UGameplayContainerSlot_DragDropOperation</a>, <a class="el" href="class_u_gameplay_container_split_stack_widget.html#a4924598aacbfe78f218bad1453429ab1">UGameplayContainerSplitStackWidget</a></li>
 <li>DestinationSlot&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___move_item.html#ae44cd944c9dfe87726b7613e48165b07">FGameplayAbilityTargetData_MoveItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___split_item_stack.html#a23d2cbed72a114c0d892f58483cce6da">FGameplayAbilityTargetData_SplitItemStack</a>, <a class="el" href="struct_f_gameplay_ability_target_data___stack_item.html#a8db530484cb8d3303a8e474839c870e1">FGameplayAbilityTargetData_StackItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___swap_item.html#a0d97d71fc9c48690421478f067b8f69f">FGameplayAbilityTargetData_SwapItem</a>, <a class="el" href="struct_f_gameplay_container_request.html#a4c760d93e7e91d50afcbb00ceaf39257">FGameplayContainerRequest</a>, <a class="el" href="class_u_gameplay_container_task___move_item.html#a27c75e5b55502adc75b05aa6b5eafc54">UGameplayContainerTask_MoveItem</a>, <a class="el" href="class_u_gameplay_container_task___split_item_stack.html#af4ee9811b2e08b4e612fdb447a84156f">UGameplayContainerTask_SplitItemStack</a>, <a class="el" href="class_u_gameplay_container_task___stack_item.html#a546cfcac8dd8f7e3279550ca041ed5c9">UGameplayContainerTask_StackItem</a>, <a class="el" href="class_u_gameplay_container_task___swap_item.html#aa6b2953f1c282014a84e1361a963e5c7">UGameplayContainerTask_SwapItem</a></li>
-<li>DestinationSlotType&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___transfer_item.html#a34a884e0fd9700aad1c53b18401e2ddf">FGameplayAbilityTargetData_TransferItem</a>, <a class="el" href="struct_f_gameplay_container_request.html#a2cdd4eba489f54650b66ae597af20c7f">FGameplayContainerRequest</a>, <a class="el" href="class_u_gameplay_container_task___transfer_item.html#a2c57aee3df1ae96750309c7e8077bd44">UGameplayContainerTask_TransferItem</a></li>
+<li>DestinationSlotType&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___transfer_item.html#a34a884e0fd9700aad1c53b18401e2ddf">FGameplayAbilityTargetData_TransferItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___transfer_items.html#a43c658b124c4960ae5653af48080ef9e">FGameplayAbilityTargetData_TransferItems</a>, <a class="el" href="struct_f_gameplay_container_request.html#a2cdd4eba489f54650b66ae597af20c7f">FGameplayContainerRequest</a>, <a class="el" href="class_u_gameplay_container_task___transfer_item.html#a2c57aee3df1ae96750309c7e8077bd44">UGameplayContainerTask_TransferItem</a>, <a class="el" href="class_u_gameplay_container_task___transfer_items.html#aed8c4b9d149d58ab87b88cf29f0da739">UGameplayContainerTask_TransferItems</a></li>
 <li>DestroyEquipmentActors()&#160;:&#160;<a class="el" href="class_u_gameplay_equipment_instance.html#ad354299bf659a5c45c19794b56d8891a">UGameplayEquipmentInstance</a></li>
 <li>DestroyEquipmentInstance()&#160;:&#160;<a class="el" href="struct_f_gameplay_equipment_manager.html#ac6f0c09a544769c019191f6d959acbe4">FGameplayEquipmentManager</a></li>
 <li>DestroyItemInstance()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a1ffb0b98415b8dde26127fe88b133d8d">UGameplayContainerComponent</a></li>
 <li>DestructionTime&#160;:&#160;<a class="el" href="class_u_gameplay_item_fragment___world.html#a6ef725c711a4c7a9aeb766c2a6fe18a6">UGameplayItemFragment_World</a></li>
 <li>DestructionTimerHandle&#160;:&#160;<a class="el" href="class_a_world_item.html#a78c746c23364908219cedeabd460860e">AWorldItem</a></li>
-<li>DisplayName&#160;:&#160;<a class="el" href="class_u_gameplay_container_fragment___u_i.html#a6ba91068aa3b9550dffcf1253450950e">UGameplayContainerFragment_UI</a>, <a class="el" href="class_u_gameplay_item_fragment___u_i.html#aa8064b9ba5ea129f43d3069fd55b7dd7">UGameplayItemFragment_UI</a></li>
+<li>DisplayName&#160;:&#160;<a class="el" href="class_u_gameplay_container_fragment___u_i.html#a6ba91068aa3b9550dffcf1253450950e">UGameplayContainerFragment_UI</a>, <a class="el" href="class_u_gameplay_container_item_sorting_option.html#a1ec0594eb523df56916124b32269eca3">UGameplayContainerItemSortingOption</a>, <a class="el" href="class_u_gameplay_item_fragment___u_i.html#aa8064b9ba5ea129f43d3069fd55b7dd7">UGameplayItemFragment_UI</a>, <a class="el" href="class_u_gameplay_item_rarity.html#a478698008418ba0645d3e4c2efe4b478">UGameplayItemRarity</a></li>
 <li>DoesItemExist()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#adacc8d825b6459a9dbeec033c5434e5a">UGameplayContainerComponent</a></li>
 <li>DoesItemExistInSlotsOfType()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a120ceb0779e0bfb9c2093055772c1ade">UGameplayContainerComponent</a></li>
 <li>DoesItemInstanceExist()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a069b7485fe3948b643d59e26a1df2c8e">UGameplayContainerComponent</a></li>
 <li>DoesItemInstanceExistInSlotsOfType()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a71e5f1e2947fe99a59035bf01907c96b">UGameplayContainerComponent</a></li>
 <li>DragCancelled_Implementation()&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot___drag_drop_operation.html#a0409b32499566bf8122e57c7d567f561">UGameplayContainerSlot_DragDropOperation</a></li>
-<li>DragCompletedSound&#160;:&#160;<a class="el" href="class_u_gameplay_item_fragment___u_i.html#a0e0d1dcc075cca895c79d5ab40033ca5">UGameplayItemFragment_UI</a></li>
+<li>DragCompletedSound&#160;:&#160;<a class="el" href="class_u_gameplay_item_fragment___u_i.html#acc097b24839c5a4fd409d25cc63f7525">UGameplayItemFragment_UI</a></li>
 <li>DragDropOperationClass&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot_fragment___u_i.html#a0d39e4236e6418678c9c1ce788a57d61">UGameplayContainerSlotFragment_UI</a></li>
 <li>Dragged_Implementation()&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot___drag_drop_operation.html#a55738141ee4f54c7afb03694fe7611bb">UGameplayContainerSlot_DragDropOperation</a></li>
 <li>DraggedWidgetClass&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot_fragment___u_i.html#abd3048ffc326e02fdb17b3071bd7c71f">UGameplayContainerSlotFragment_UI</a></li>
 <li>DragHoveredBrush&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot_fragment___u_i.html#a44d7f8c3e2be820bbd456655a18666de">UGameplayContainerSlotFragment_UI</a></li>
 <li>DragHoveredSound&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot_fragment___u_i.html#aada0529f246895ff847e46e8c1f8c762">UGameplayContainerSlotFragment_UI</a></li>
-<li>DragStartedSound&#160;:&#160;<a class="el" href="class_u_gameplay_item_fragment___u_i.html#a731e1d185e74a674fa54b867ab05a7a4">UGameplayItemFragment_UI</a></li>
+<li>DragStartedSound&#160;:&#160;<a class="el" href="class_u_gameplay_item_fragment___u_i.html#a0f3a9c82b307ec7f9b2385c5570270df">UGameplayItemFragment_UI</a></li>
 <li>DrawOutline()&#160;:&#160;<a class="el" href="class_i_outline_drawing_entity_interface.html#adcda4d354305e830f2c6141b3005e212">IOutlineDrawingEntityInterface</a></li>
 <li>DrawOutline_Implementation()&#160;:&#160;<a class="el" href="class_a_gameplay_entity.html#ae57cbd424bb4eda3a965019ee61b7a7d">AGameplayEntity</a></li>
 <li>Drop_Implementation()&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot___drag_drop_operation.html#ac2801020864e187d0ed839247c355cfe">UGameplayContainerSlot_DragDropOperation</a></li>
@@ -133,12 +114,9 @@ $(document).ready(function(){initNavTree('functions_d.html',''); initResizable()
 <li>DynamicTags&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a855ffa751dbd6dc956c81ba98eb1d0a1">UGameplayContainerComponent</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
 </body>
 </html>

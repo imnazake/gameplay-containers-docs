@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,8 +20,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="gc.ico"/></td>
   <td id="projectalign">
-   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.1</span>
    </div>
   </td>
  </tr>
@@ -51,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_func_g.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -93,10 +74,12 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
 <li>GameplayContainers()&#160;:&#160;<a class="el" href="class_gameplay_containers.html#ae46ae5279d170ec1134379aaa2f64975">GameplayContainers</a></li>
-<li>GenerateTargetDataHandle()&#160;:&#160;<a class="el" href="class_u_gameplay_container_task___drop_item.html#a261b12309d52b73390a57948bf94b218">UGameplayContainerTask_DropItem</a>, <a class="el" href="class_u_gameplay_container_task___move_item.html#a6b04fa234e1b712fdd4bb5aedb6bec20">UGameplayContainerTask_MoveItem</a>, <a class="el" href="class_u_gameplay_container_task___split_item_stack.html#ab37758fe27e2520125ccd436082b1a4d">UGameplayContainerTask_SplitItemStack</a>, <a class="el" href="class_u_gameplay_container_task___stack_item.html#a9348e4db9312a7749827f2167f0d9f1d">UGameplayContainerTask_StackItem</a>, <a class="el" href="class_u_gameplay_container_task___swap_item.html#a5b1f955177ec84c0a7f96d8aac2f5018">UGameplayContainerTask_SwapItem</a>, <a class="el" href="class_u_gameplay_container_task___target_data.html#a3a3de69a3b5d991324fc2ad6ec422099">UGameplayContainerTask_TargetData</a>, <a class="el" href="class_u_hotbar_task___activate_slot.html#a4510df94354f95f0843de929c3536202">UHotbarTask_ActivateSlot</a></li>
+<li>GenerateRandomLoot()&#160;:&#160;<a class="el" href="class_u_gameplay_container_library.html#a19a351b3bb106b5a6384377af4d01ebe">UGameplayContainerLibrary</a>, <a class="el" href="class_u_random_loot_generation_settings.html#aed17e249075ddee9a9597ef9648854f8">URandomLootGenerationSettings</a></li>
+<li>GenerateTargetDataHandle()&#160;:&#160;<a class="el" href="class_u_gameplay_container_task___drop_item.html#a261b12309d52b73390a57948bf94b218">UGameplayContainerTask_DropItem</a>, <a class="el" href="class_u_gameplay_container_task___loot_item.html#a3f7fba6bbe551001e27fc0569dc758bc">UGameplayContainerTask_LootItem</a>, <a class="el" href="class_u_gameplay_container_task___move_item.html#a6b04fa234e1b712fdd4bb5aedb6bec20">UGameplayContainerTask_MoveItem</a>, <a class="el" href="class_u_gameplay_container_task___sort_items.html#adf5beddef544ab75ea8d77321c7ca676">UGameplayContainerTask_SortItems</a>, <a class="el" href="class_u_gameplay_container_task___split_item_stack.html#ab37758fe27e2520125ccd436082b1a4d">UGameplayContainerTask_SplitItemStack</a>, <a class="el" href="class_u_gameplay_container_task___stack_item.html#a9348e4db9312a7749827f2167f0d9f1d">UGameplayContainerTask_StackItem</a>, <a class="el" href="class_u_gameplay_container_task___swap_item.html#a5b1f955177ec84c0a7f96d8aac2f5018">UGameplayContainerTask_SwapItem</a>, <a class="el" href="class_u_gameplay_container_task___target_data.html#a3a3de69a3b5d991324fc2ad6ec422099">UGameplayContainerTask_TargetData</a>, <a class="el" href="class_u_hotbar_task___activate_slot.html#a4510df94354f95f0843de929c3536202">UHotbarTask_ActivateSlot</a></li>
 <li>GetAbilityInputActionByTag()&#160;:&#160;<a class="el" href="class_u_gameplay_container_library.html#adcacfc7d97a138e92d1e448e20732e78">UGameplayContainerLibrary</a></li>
 <li>GetAbilitySetsToGrant()&#160;:&#160;<a class="el" href="class_u_gameplay_equipment_definition.html#a0419ab75b8e102efe944005e4645ef32">UGameplayEquipmentDefinition</a></li>
 <li>GetAbilitySystemComponent()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a25f710e50ceeaff169afa04a6abfaad6">UGameplayContainerComponent</a></li>
+<li>GetAbilitySystemFromGameplayContainer()&#160;:&#160;<a class="el" href="class_u_gameplay_container_library.html#a3b26d9380d6394d6a7a5c02ad190bf6e">UGameplayContainerLibrary</a></li>
 <li>GetAbilitySystemFromOwnerGameplayContainer()&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot_data_object.html#a6353425d77cb5a7ec19a2c477a18b947">UGameplayContainerSlotDataObject</a></li>
 <li>GetActiveEquipmentInstance()&#160;:&#160;<a class="el" href="class_u_hotbar_component.html#a1b45f6405f195be979804111213c9225">UHotbarComponent</a></li>
 <li>GetActiveItemInstance()&#160;:&#160;<a class="el" href="class_u_hotbar_component.html#a42519a7fcfbd55ff1d511303fe1b26a9">UHotbarComponent</a></li>
@@ -104,6 +87,8 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GetActiveSlotChangedDelegate()&#160;:&#160;<a class="el" href="class_u_hotbar_component.html#a90eb64731e0b97bca4737b4777e950b3">UHotbarComponent</a></li>
 <li>GetActorsToSpawn()&#160;:&#160;<a class="el" href="class_u_gameplay_equipment_definition.html#ab8580bf67702c28410e2f05a7868b6ca">UGameplayEquipmentDefinition</a></li>
 <li>GetAllSlotTypes()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#acefe0b462141742e0d3d8a52438b10f1">UGameplayContainerComponent</a></li>
+<li>GetAssociatedEquipmentInstance()&#160;:&#160;<a class="el" href="class_u_gameplay_ability___from_equipment.html#a90b9eceb2f433db83ef037a4c03c334e">UGameplayAbility_FromEquipment</a></li>
+<li>GetAssociatedItemInstance()&#160;:&#160;<a class="el" href="class_u_gameplay_ability___from_equipment.html#ab35011cd4d721c448422936b197638f7">UGameplayAbility_FromEquipment</a>, <a class="el" href="class_u_gameplay_ability___from_item.html#ae8a3f652f127eefe6bade330a2b3fdd9">UGameplayAbility_FromItem</a></li>
 <li>GetAttributeSetByClass()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a4fd3ed28b0e6cfa8fca5ff288704f241">UGameplayContainerComponent</a></li>
 <li>GetAttributeSetByTag()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a118bd8378000912f50bf93b70f8d1154">UGameplayContainerComponent</a></li>
 <li>GetAttributeSetClass()&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot_fragment___attribute_set.html#a12d690aff9cd16ba506e1b93217dde43">UGameplayContainerSlotFragment_AttributeSet</a></li>
@@ -117,6 +102,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GetContainerDefinitionDefaultObject()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a00c26321715089cf5b8cf43492a46e0f">UGameplayContainerComponent</a></li>
 <li>GetContainerDynamicTagsChangedDelegate()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a6c14af58f655132531e1fa0e4ad92840">UGameplayContainerComponent</a></li>
 <li>GetContainerManager()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#ae63a214dc716f85c46efd5839c5057cd">UGameplayContainerComponent</a></li>
+<li>GetContainerManager_Mutable()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a82ee3ae95f4cfc2f172b3284627a55c5">UGameplayContainerComponent</a></li>
 <li>GetContainerRecentChangeDetectionDelegate()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#aa3bb5b2784b726c2070fcdcfb3d48c20">UGameplayContainerComponent</a></li>
 <li>GetContainerSlotUpdateDelegate()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#ac0f20c9968b90e21944433bb3b29dad9">UGameplayContainerComponent</a></li>
 <li>GetContainerSplitStackDelegate()&#160;:&#160;<a class="el" href="class_u_gameplay_container_subsystem.html#a8d917eb5367f07e10bf61eb42f728ff2">UGameplayContainerSubsystem</a></li>
@@ -151,7 +137,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GetFirstSlotOfType()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a3f6b1998915b3c4e4d5fab8edf6fcdc7">UGameplayContainerComponent</a></li>
 <li>GetFirstTemplate()&#160;:&#160;<a class="el" href="class_a_world_item.html#af716ff2ec806a5d56950ba6bd0e3f96b">AWorldItem</a></li>
 <li>GetFragmentByClass()&#160;:&#160;<a class="el" href="class_u_gameplay_container_definition.html#a013c2a46169f4d21b34586e545ca2865">UGameplayContainerDefinition</a>, <a class="el" href="class_u_gameplay_container_slot_definition.html#a7d363ae7e9d8a8e1b62785187e8a1b74">UGameplayContainerSlotDefinition</a>, <a class="el" href="class_u_gameplay_item_definition.html#a44694956c73e0a277d524a423013f2f2">UGameplayItemDefinition</a>, <a class="el" href="class_u_gameplay_item_instance.html#a834a1fb1eb11e3a64575b1fe0e793342">UGameplayItemInstance</a></li>
+<li>GetFragmentOwnedGameplayTags()&#160;:&#160;<a class="el" href="class_u_gameplay_item_definition.html#ad0c62416e9fd1f3470c4562be024fc69">UGameplayItemDefinition</a></li>
 <li>GetFragments()&#160;:&#160;<a class="el" href="class_u_gameplay_container_definition.html#a7143018fe826da5cfe8613c62767fd69">UGameplayContainerDefinition</a>, <a class="el" href="class_u_gameplay_container_slot_definition.html#a518c9830a0e272b44531db9e8e4b9c20">UGameplayContainerSlotDefinition</a>, <a class="el" href="class_u_gameplay_item_definition.html#ad1114b3a104e79ef010513e4b0c24010">UGameplayItemDefinition</a>, <a class="el" href="class_u_gameplay_item_instance.html#a7261d04bef384e594cd7e8912b3e57f6">UGameplayItemInstance</a></li>
+<li>GetFragmentsOwnedGameplayTags()&#160;:&#160;<a class="el" href="class_u_gameplay_item_definition.html#accd9929aec300d8c3e94d62082875a6a">UGameplayItemDefinition</a></li>
 <li>GetFunctionCallspace()&#160;:&#160;<a class="el" href="class_u_gameplay_container_cheat_manager.html#ab4daf71d2f43a514f3bf7d7b5a9b4bac">UGameplayContainerCheatManager</a></li>
 <li>GetGameplayContainer()&#160;:&#160;<a class="el" href="class_u_gameplay_container_notification_widget.html#a60efc4a9079c87cb3b4d4bca77913d56">UGameplayContainerNotificationWidget</a>, <a class="el" href="class_u_gameplay_container_widget.html#aa81b3351239d87ce8d6ae3c51aebbbba">UGameplayContainerWidget</a></li>
 <li>GetGameplayContainerInputConfig()&#160;:&#160;<a class="el" href="class_u_gameplay_container_library.html#a600a667f5dbd03d5b97cd6585c51512f">UGameplayContainerLibrary</a></li>
@@ -185,7 +173,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GetNotificationData()&#160;:&#160;<a class="el" href="class_u_gameplay_container_notification_slot_widget.html#a71cd10aaa7e18c97fb2efe89b2800557">UGameplayContainerNotificationSlotWidget</a></li>
 <li>GetOccupiedSlotCount()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a72f03a75a7116042e9fcbdda0d88b75c">UGameplayContainerComponent</a></li>
 <li>GetOccupiedSlotCountByType()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#ae684b6f065302f79d17c3538d75d3138">UGameplayContainerComponent</a></li>
-<li>GetOwnedGameplayTags()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a389baa547e96f7283310243a1c135672">UGameplayContainerComponent</a>, <a class="el" href="class_u_gameplay_container_set.html#a4ef7f98b3acde2c7f6a1a454d8af2f0f">UGameplayContainerSet</a>, <a class="el" href="class_u_gameplay_item_definition.html#a7571f9361a1e0ccf8766d93e6670ade8">UGameplayItemDefinition</a>, <a class="el" href="class_u_gameplay_item_instance.html#a3aa38a99878c988266a50e5b4e995c98">UGameplayItemInstance</a></li>
+<li>GetOwnedGameplayTags()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a389baa547e96f7283310243a1c135672">UGameplayContainerComponent</a>, <a class="el" href="class_u_gameplay_container_set.html#a4ef7f98b3acde2c7f6a1a454d8af2f0f">UGameplayContainerSet</a>, <a class="el" href="class_u_gameplay_item_definition.html#a7571f9361a1e0ccf8766d93e6670ade8">UGameplayItemDefinition</a>, <a class="el" href="class_u_gameplay_item_fragment.html#a37237cf954d66803768b6bc1f6abece7">UGameplayItemFragment</a>, <a class="el" href="class_u_gameplay_item_instance.html#a3aa38a99878c988266a50e5b4e995c98">UGameplayItemInstance</a>, <a class="el" href="class_u_gameplay_item_rarity.html#add8156c08c00103006cf7f2580083db5">UGameplayItemRarity</a></li>
 <li>GetOwnedTags()&#160;:&#160;<a class="el" href="struct_f_gameplay_container_slot.html#a26bc8206b2f08fd0fad89892b8dab4a4">FGameplayContainerSlot</a></li>
 <li>GetOwnedTags_Slot()&#160;:&#160;<a class="el" href="class_u_gameplay_container_library.html#a734ac07712fdf7d93db2defdbbeb3d18">UGameplayContainerLibrary</a></li>
 <li>GetOwner()&#160;:&#160;<a class="el" href="struct_f_gameplay_stat_container.html#adcc372497751f73b4aa9fb50ee2d457e">FGameplayStatContainer</a>, <a class="el" href="class_u_gameplay_item_instance.html#a758936035d0dd527d85a89673b3e0d58">UGameplayItemInstance</a></li>
@@ -194,12 +182,13 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GetOwnerItemInstance()&#160;:&#160;<a class="el" href="class_u_gameplay_equipment_instance.html#ac82e3c1476f809323e5b05c0d105364c">UGameplayEquipmentInstance</a></li>
 <li>GetOwningPlayerController()&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot___drag_drop_operation.html#a184d1fb76acc050edd2f2f501e501aa2">UGameplayContainerSlot_DragDropOperation</a></li>
 <li>GetPawn()&#160;:&#160;<a class="el" href="class_u_gameplay_equipment_instance.html#a0609845a474b2e32072e081f271c8155">UGameplayEquipmentInstance</a></li>
+<li>GetPrimaryAssetId()&#160;:&#160;<a class="el" href="class_u_gameplay_item_definition.html#af0051aea2c034c53264c8a1cbbe2c8bc">UGameplayItemDefinition</a></li>
 <li>GetQuantity()&#160;:&#160;<a class="el" href="struct_f_gameplay_container_overflowing_item.html#a23b01ab218b63b127b87657cb70c3587">FGameplayContainerOverflowingItem</a>, <a class="el" href="struct_f_gameplay_container_slot.html#a4f66f64659176716718ed336c292c57e">FGameplayContainerSlot</a></li>
 <li>GetRegisteredGameplayContainers()&#160;:&#160;<a class="el" href="class_u_global_gameplay_container_subsystem.html#a046147d92fb9c7f0308cd8e9a6381728">UGlobalGameplayContainerSubsystem</a></li>
 <li>GetRegisteredGameplayContainers_Mutable()&#160;:&#160;<a class="el" href="class_u_global_gameplay_container_subsystem.html#ab62de24652be8561b55d94412e0ae39d">UGlobalGameplayContainerSubsystem</a></li>
-<li>GetReigsteredUsers()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a63163a1048d213927171d0cb1ac11d43">UGameplayContainerComponent</a></li>
+<li>GetRegisteredUsers()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a92557d6d3a6f8b7dcf177d355c1b5e55">UGameplayContainerComponent</a></li>
 <li>GetRequestData()&#160;:&#160;<a class="el" href="class_u_gameplay_container_subsystem.html#ace78b41004807fa18164a419f5fd8e5d">UGameplayContainerSubsystem</a></li>
-<li>GetScriptStruct()&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___activate_slot.html#a7588d0be7af9d47840439bd24ddf4fd6">FGameplayAbilityTargetData_ActivateSlot</a>, <a class="el" href="struct_f_gameplay_ability_target_data___drop_item.html#a7471ff53e23b631b02a4d383c89239b5">FGameplayAbilityTargetData_DropItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___move_item.html#afc90cbae718e2b7b3268145c22d3d92c">FGameplayAbilityTargetData_MoveItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___split_item_stack.html#a641168023d21730c5c2612e4a5229585">FGameplayAbilityTargetData_SplitItemStack</a>, <a class="el" href="struct_f_gameplay_ability_target_data___stack_item.html#a62b95a4ac02a5e8e3c03df49814eac31">FGameplayAbilityTargetData_StackItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___swap_item.html#aeb2884c605d5b3096ea36c4b49a34cd1">FGameplayAbilityTargetData_SwapItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___transfer_item.html#aa11fe23f86efb296a2cbc19b43c021ed">FGameplayAbilityTargetData_TransferItem</a></li>
+<li>GetScriptStruct()&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___activate_slot.html#a7588d0be7af9d47840439bd24ddf4fd6">FGameplayAbilityTargetData_ActivateSlot</a>, <a class="el" href="struct_f_gameplay_ability_target_data___drop_item.html#a7471ff53e23b631b02a4d383c89239b5">FGameplayAbilityTargetData_DropItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___loot_item.html#ac5d6c157a9c143ba7a64fe466e178bd8">FGameplayAbilityTargetData_LootItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___move_item.html#afc90cbae718e2b7b3268145c22d3d92c">FGameplayAbilityTargetData_MoveItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___sort_items.html#a5b874a91bb3719abf2908fd648609838">FGameplayAbilityTargetData_SortItems</a>, <a class="el" href="struct_f_gameplay_ability_target_data___split_item_stack.html#a641168023d21730c5c2612e4a5229585">FGameplayAbilityTargetData_SplitItemStack</a>, <a class="el" href="struct_f_gameplay_ability_target_data___stack_item.html#a62b95a4ac02a5e8e3c03df49814eac31">FGameplayAbilityTargetData_StackItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___swap_item.html#aeb2884c605d5b3096ea36c4b49a34cd1">FGameplayAbilityTargetData_SwapItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___transfer_item.html#aa11fe23f86efb296a2cbc19b43c021ed">FGameplayAbilityTargetData_TransferItem</a>, <a class="el" href="struct_f_gameplay_ability_target_data___transfer_items.html#a582f24f74ae4d933623894a6176fa5e5">FGameplayAbilityTargetData_TransferItems</a></li>
 <li>GetSlot()&#160;:&#160;<a class="el" href="struct_f_gameplay_container_slot_handle.html#aebdfa131399c86613b00d4dc3b0eea9b">FGameplayContainerSlotHandle</a>, <a class="el" href="class_u_gameplay_container_library.html#a0016f3f07f348a21563c68046f9286fc">UGameplayContainerLibrary</a>, <a class="el" href="class_u_gameplay_container_slot_data_object.html#a9cbca410867c07ab48ab7e5080d4588c">UGameplayContainerSlotDataObject</a></li>
 <li>GetSlotByHandle()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a2e6d83a283aca2bafbefb1c55d2dbd6f">UGameplayContainerComponent</a></li>
 <li>GetSlotByHandle_Mutable()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#addb7c24381f22e6ebe3eb223a61958c1">UGameplayContainerComponent</a></li>
@@ -214,6 +203,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GetSlotHandleByIndex()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#aa27cf9f53e8f56c080b2389a608fc9b5">UGameplayContainerComponent</a></li>
 <li>GetSlotIndex()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a01452bcfb3cefd4b429038bcf7134790">UGameplayContainerComponent</a></li>
 <li>GetSlots()&#160;:&#160;<a class="el" href="struct_f_gameplay_container_manager.html#a5f06ef85ba2420ffcfc88d94b295c09a">FGameplayContainerManager</a>, <a class="el" href="class_u_gameplay_container_component.html#ac4d925754c1f524c6a3923102fb4d2a4">UGameplayContainerComponent</a></li>
+<li>GetSlots_Mutable()&#160;:&#160;<a class="el" href="struct_f_gameplay_container_manager.html#a514a626f9baad5236a5bc4cfa817263e">FGameplayContainerManager</a>, <a class="el" href="class_u_gameplay_container_component.html#a2a92ce612d7c8e700baf3e75f91ca333">UGameplayContainerComponent</a></li>
 <li>GetSlotsToCreate()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a8919e73fb1d9937f60e1b2f0bb866d45">UGameplayContainerComponent</a>, <a class="el" href="class_u_gameplay_container_definition.html#aa19c7adaf75f21d4e560ee71d1df8995">UGameplayContainerDefinition</a></li>
 <li>GetSlotsWidgets()&#160;:&#160;<a class="el" href="class_u_gameplay_container_widget.html#aaea35ca6e67d613daf10fcc7a6cd64bf">UGameplayContainerWidget</a></li>
 <li>GetSlotType()&#160;:&#160;<a class="el" href="struct_f_gameplay_container_overflowing_item.html#a383f19ed146d4f8ded6307e4aca47d59">FGameplayContainerOverflowingItem</a>, <a class="el" href="struct_f_gameplay_container_slot.html#a97e9ef67d7ed8cea88a0f7f1e6d01a6e">FGameplayContainerSlot</a>, <a class="el" href="class_u_gameplay_container_slot_definition.html#a9b5880232ee123d14bebbfdb1b5d6d89">UGameplayContainerSlotDefinition</a></li>
@@ -243,12 +233,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GrantTags()&#160;:&#160;<a class="el" href="struct_f_gameplay_container_slot.html#ab14aaf4349c8ae12b0c4947dfd674628">FGameplayContainerSlot</a>, <a class="el" href="class_u_gameplay_item_instance.html#a0da9d033d63e5703dafad9c5b80aeea3">UGameplayItemInstance</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
 </body>
 </html>

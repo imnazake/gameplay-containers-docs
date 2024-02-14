@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,8 +20,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="gc.ico"/></td>
   <td id="projectalign">
-   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.1</span>
    </div>
   </td>
  </tr>
@@ -51,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_func_f.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -97,11 +78,14 @@ $(document).ready(function(){initNavTree('functions_func_f.html',''); initResiza
 <li>FGameplayAbilitySet_GameplayEffect()&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_set___gameplay_effect.html#a7d6eec8e1eff6817927829e8ee015c6b">FGameplayAbilitySet_GameplayEffect</a></li>
 <li>FGameplayAbilitySet_GrantedHandles()&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_set___granted_handles.html#a5ac8a8973325a52e7a99b60722c90ada">FGameplayAbilitySet_GrantedHandles</a></li>
 <li>FGameplayAbilityTargetData_DropItem()&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___drop_item.html#a6ef04a09fc631d8707c1d30d24607268">FGameplayAbilityTargetData_DropItem</a></li>
+<li>FGameplayAbilityTargetData_LootItem()&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___loot_item.html#a75447b2a3fadccbd3775a2a85d5dc8a5">FGameplayAbilityTargetData_LootItem</a></li>
 <li>FGameplayAbilityTargetData_MoveItem()&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___move_item.html#af6dfb724753f9015fd1678d404338448">FGameplayAbilityTargetData_MoveItem</a></li>
+<li>FGameplayAbilityTargetData_SortItems()&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___sort_items.html#a7556b32943a56d4871aeb6651138ae59">FGameplayAbilityTargetData_SortItems</a></li>
 <li>FGameplayAbilityTargetData_SplitItemStack()&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___split_item_stack.html#a3f1cac12d8fc8027fff58c9953e0ed21">FGameplayAbilityTargetData_SplitItemStack</a></li>
 <li>FGameplayAbilityTargetData_StackItem()&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___stack_item.html#ab43d4611f39b681f9f128647e1c16566">FGameplayAbilityTargetData_StackItem</a></li>
 <li>FGameplayAbilityTargetData_SwapItem()&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___swap_item.html#a46a9aad463687dd5734464d0afd83130">FGameplayAbilityTargetData_SwapItem</a></li>
 <li>FGameplayAbilityTargetData_TransferItem()&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___transfer_item.html#a03812ac48399d8c840107935eedcdd2e">FGameplayAbilityTargetData_TransferItem</a></li>
+<li>FGameplayAbilityTargetData_TransferItems()&#160;:&#160;<a class="el" href="struct_f_gameplay_ability_target_data___transfer_items.html#a4b579ed8fb5bcf8f3f07b18e26a6d81d">FGameplayAbilityTargetData_TransferItems</a></li>
 <li>FGameplayContainerInputAction()&#160;:&#160;<a class="el" href="struct_f_gameplay_container_input_action.html#a65943f1d3e801ce8bba6e0d82707ccbb">FGameplayContainerInputAction</a></li>
 <li>FGameplayContainerManager()&#160;:&#160;<a class="el" href="struct_f_gameplay_container_manager.html#aacc27ce4898a7fb7d6848e27006adf40">FGameplayContainerManager</a></li>
 <li>FGameplayContainerOverflowingItem()&#160;:&#160;<a class="el" href="struct_f_gameplay_container_overflowing_item.html#a5499dde4216cfcf19d7b26f0907a71b5">FGameplayContainerOverflowingItem</a></li>
@@ -127,17 +111,17 @@ $(document).ready(function(){initNavTree('functions_func_f.html',''); initResiza
 <li>FindSlotByItemDefinition()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a31611848840e753bb61e5c418048fc36">UGameplayContainerComponent</a></li>
 <li>FindSlotByItemInstance()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a1271be486b9764de04abc58d2d748b4e">UGameplayContainerComponent</a></li>
 <li>FindSlotByType()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#aadb2208a72c838f00ffb1a1f7570b89c">UGameplayContainerComponent</a></li>
+<li>ForceContentReplication()&#160;:&#160;<a class="el" href="class_a_world_item.html#a8344969d00d4f737ee1cb462b5594b5e">AWorldItem</a></li>
+<li>FRandomLootGenerationParameter()&#160;:&#160;<a class="el" href="struct_f_random_loot_generation_parameter.html#a9c4a750e8f536721b25c8be07cf3995c">FRandomLootGenerationParameter</a></li>
+<li>FRandomLootGenerationResult()&#160;:&#160;<a class="el" href="struct_f_random_loot_generation_result.html#aac22fb1c3188298e63f2d57cc47a139e">FRandomLootGenerationResult</a></li>
 <li>FWorldItemContent()&#160;:&#160;<a class="el" href="struct_f_world_item_content.html#a377cd481259211b10985a1190e1ef941">FWorldItemContent</a></li>
 <li>FWorldItemInstance()&#160;:&#160;<a class="el" href="struct_f_world_item_instance.html#ae6b1aec66cd150e9a8839d3b390f6a64">FWorldItemInstance</a></li>
 <li>FWorldItemTemplate()&#160;:&#160;<a class="el" href="struct_f_world_item_template.html#a5e1ef2998068b7b116ac32961e826400">FWorldItemTemplate</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
 </body>
 </html>

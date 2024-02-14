@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,8 +20,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="gc.ico"/></td>
   <td id="projectalign">
-   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.1</span>
    </div>
   </td>
  </tr>
@@ -50,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_u_gameplay_container_component.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,6 +68,7 @@ $(document).ready(function(){initNavTree('class_u_gameplay_container_component.h
 </div>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -142,10 +123,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a49ce4feab90049ff426516006c5c4d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4528b5683363b2828d1572bb3af25a16" id="r_a4528b5683363b2828d1572bb3af25a16"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a4528b5683363b2828d1572bb3af25a16">UnregisterUser</a> (UAbilitySystemComponent *AbilitySystem)</td></tr>
 <tr class="separator:a4528b5683363b2828d1572bb3af25a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63163a1048d213927171d0cb1ac11d43" id="r_a63163a1048d213927171d0cb1ac11d43"><td class="memItemLeft" align="right" valign="top">const TArray&lt; UAbilitySystemComponent * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a63163a1048d213927171d0cb1ac11d43">GetReigsteredUsers</a> () const</td></tr>
-<tr class="separator:a63163a1048d213927171d0cb1ac11d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd6d4366f758e5261d01f516b93c14c" id="r_adbd6d4366f758e5261d01f516b93c14c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#adbd6d4366f758e5261d01f516b93c14c">IsUserRegistered</a> (UAbilitySystemComponent *AbilitySystem) const</td></tr>
+<tr class="separator:adbd6d4366f758e5261d01f516b93c14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92557d6d3a6f8b7dcf177d355c1b5e55" id="r_a92557d6d3a6f8b7dcf177d355c1b5e55"><td class="memItemLeft" align="right" valign="top">const TArray&lt; UAbilitySystemComponent * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a92557d6d3a6f8b7dcf177d355c1b5e55">GetRegisteredUsers</a> () const</td></tr>
+<tr class="separator:a92557d6d3a6f8b7dcf177d355c1b5e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae63a214dc716f85c46efd5839c5057cd" id="r_ae63a214dc716f85c46efd5839c5057cd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_f_gameplay_container_manager.html">FGameplayContainerManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#ae63a214dc716f85c46efd5839c5057cd">GetContainerManager</a> () const</td></tr>
 <tr class="separator:ae63a214dc716f85c46efd5839c5057cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ee3ae95f4cfc2f172b3284627a55c5" id="r_a82ee3ae95f4cfc2f172b3284627a55c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_gameplay_container_manager.html">FGameplayContainerManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a82ee3ae95f4cfc2f172b3284627a55c5">GetContainerManager_Mutable</a> ()</td></tr>
+<tr class="separator:a82ee3ae95f4cfc2f172b3284627a55c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a508f31a35e7529f53c17bf33f6f8db01" id="r_a508f31a35e7529f53c17bf33f6f8db01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a508f31a35e7529f53c17bf33f6f8db01">HasNetworkAuthority</a> () const</td></tr>
 <tr class="separator:a508f31a35e7529f53c17bf33f6f8db01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3de24b25b3b1490e8dbcc5d67f4bc7eb" id="r_a3de24b25b3b1490e8dbcc5d67f4bc7eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a3de24b25b3b1490e8dbcc5d67f4bc7eb">IsAutonomousProxy</a> () const</td></tr>
@@ -168,6 +153,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:addb7c24381f22e6ebe3eb223a61958c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4d925754c1f524c6a3923102fb4d2a4" id="r_ac4d925754c1f524c6a3923102fb4d2a4"><td class="memItemLeft" align="right" valign="top">const TArray&lt; <a class="el" href="struct_f_gameplay_container_slot.html">FGameplayContainerSlot</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#ac4d925754c1f524c6a3923102fb4d2a4">GetSlots</a> () const</td></tr>
 <tr class="separator:ac4d925754c1f524c6a3923102fb4d2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a92ce612d7c8e700baf3e75f91ca333" id="r_a2a92ce612d7c8e700baf3e75f91ca333"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_gameplay_container_slot.html">FGameplayContainerSlot</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a2a92ce612d7c8e700baf3e75f91ca333">GetSlots_Mutable</a> ()</td></tr>
+<tr class="separator:a2a92ce612d7c8e700baf3e75f91ca333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a054509a285e87c72fb58a29955bc9c36" id="r_a054509a285e87c72fb58a29955bc9c36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a054509a285e87c72fb58a29955bc9c36">QuerySlotsOfType</a> (const FGameplayTag &amp;SlotType, TArray&lt; <a class="el" href="struct_f_gameplay_container_slot.html">FGameplayContainerSlot</a> &gt; &amp;FoundSlots) const</td></tr>
 <tr class="separator:a054509a285e87c72fb58a29955bc9c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f6b1998915b3c4e4d5fab8edf6fcdc7" id="r_a3f6b1998915b3c4e4d5fab8edf6fcdc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_gameplay_container_slot.html">FGameplayContainerSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a3f6b1998915b3c4e4d5fab8edf6fcdc7">GetFirstSlotOfType</a> (const FGameplayTag &amp;SlotType) const</td></tr>
@@ -320,6 +307,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afb231c9ea9d0a7281b9b4c5fd8dcd29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed5c11393b7293e267ff79e8c2c83abb" id="r_aed5c11393b7293e267ff79e8c2c83abb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#aed5c11393b7293e267ff79e8c2c83abb">TransferItemToContainer</a> (const <a class="el" href="struct_f_gameplay_container_slot_handle.html">FGameplayContainerSlotHandle</a> &amp;SlotHandle, <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *DestinationContainer, const FGameplayTag &amp;DestinationSlotType)</td></tr>
 <tr class="separator:aed5c11393b7293e267ff79e8c2c83abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac371121732a25366fdb6bfe7866d7eb1" id="r_ac371121732a25366fdb6bfe7866d7eb1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#ac371121732a25366fdb6bfe7866d7eb1">CanTransferPartialItemToContainer</a> (const <a class="el" href="struct_f_gameplay_container_slot_handle.html">FGameplayContainerSlotHandle</a> &amp;SlotHandle, <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *DestinationContainer, const FGameplayTag &amp;DestinationSlotType) const</td></tr>
+<tr class="separator:ac371121732a25366fdb6bfe7866d7eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88dd8e13b17b818ed91bd43bb6707d38" id="r_a88dd8e13b17b818ed91bd43bb6707d38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a88dd8e13b17b818ed91bd43bb6707d38">TransferPartialItemToContainer</a> (const <a class="el" href="struct_f_gameplay_container_slot_handle.html">FGameplayContainerSlotHandle</a> &amp;SlotHandle, <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *DestinationContainer, const FGameplayTag &amp;DestinationSlotType)</td></tr>
+<tr class="separator:a88dd8e13b17b818ed91bd43bb6707d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93cda27c331b96493d93175167a0d0ef" id="r_a93cda27c331b96493d93175167a0d0ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a93cda27c331b96493d93175167a0d0ef">CanTransferPartialItemsToContainer</a> (const FGameplayTag &amp;SourceSlotType, const <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *DestinationContainer, const FGameplayTag &amp;DestinationSlotType)</td></tr>
+<tr class="separator:a93cda27c331b96493d93175167a0d0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4888a9a472f7bbc44fdc161fde1257" id="r_a2e4888a9a472f7bbc44fdc161fde1257"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a2e4888a9a472f7bbc44fdc161fde1257">TransferPartialItemsToContainer</a> (const FGameplayTag &amp;SourceSlotType, <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *DestinationContainer, const FGameplayTag &amp;DestinationSlotType)</td></tr>
+<tr class="separator:a2e4888a9a472f7bbc44fdc161fde1257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b57037832cf2a791b033f00935fcc42" id="r_a9b57037832cf2a791b033f00935fcc42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a9b57037832cf2a791b033f00935fcc42">CanSwapItemsBetweenSlots</a> (const <a class="el" href="struct_f_gameplay_container_slot_handle.html">FGameplayContainerSlotHandle</a> &amp;SourceSlotHandle, const <a class="el" href="struct_f_gameplay_container_slot_handle.html">FGameplayContainerSlotHandle</a> &amp;DestinationSlotHandle) const</td></tr>
 <tr class="separator:a9b57037832cf2a791b033f00935fcc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82856168fd7bec484c2f1153512eda10" id="r_a82856168fd7bec484c2f1153512eda10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a82856168fd7bec484c2f1153512eda10">SwapItemsBetweenSlots</a> (const <a class="el" href="struct_f_gameplay_container_slot_handle.html">FGameplayContainerSlotHandle</a> &amp;SourceSlotHandle, const <a class="el" href="struct_f_gameplay_container_slot_handle.html">FGameplayContainerSlotHandle</a> &amp;DestinationSlotHandle) const</td></tr>
@@ -332,8 +327,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a60eabab98af1ca5c2f65892c40ba1ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67f558ed770b0d221ceda37c43d93a89" id="r_a67f558ed770b0d221ceda37c43d93a89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a67f558ed770b0d221ceda37c43d93a89">ClearItems</a> ()</td></tr>
 <tr class="separator:a67f558ed770b0d221ceda37c43d93a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa8209478d48913b6d3eca4f832c3bf" id="r_abfa8209478d48913b6d3eca4f832c3bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#abfa8209478d48913b6d3eca4f832c3bf">SortItems</a> (TSubclassOf&lt; <a class="el" href="class_u_gameplay_container_item_sorting_option.html">UGameplayContainerItemSortingOption</a> &gt; SortingOption, const FGameplayTag &amp;SlotType, const bool bIncludeBlockedSlots=false)</td></tr>
+<tr class="separator:abfa8209478d48913b6d3eca4f832c3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b399bfe8bf7b1ea4b27437e0520845" id="r_a67b399bfe8bf7b1ea4b27437e0520845"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a67b399bfe8bf7b1ea4b27437e0520845">MarkSlotDirty</a> (<a class="el" href="struct_f_gameplay_container_slot.html">FGameplayContainerSlot</a> &amp;Slot)</td></tr>
 <tr class="separator:a67b399bfe8bf7b1ea4b27437e0520845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf51dc658febe7867d6ec3e12447c354" id="r_acf51dc658febe7867d6ec3e12447c354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#acf51dc658febe7867d6ec3e12447c354">MarkAllSlotsDirty</a> ()</td></tr>
+<tr class="separator:acf51dc658febe7867d6ec3e12447c354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7edf53941cb44cd609156bacb9575ce3" id="r_a7edf53941cb44cd609156bacb9575ce3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a7edf53941cb44cd609156bacb9575ce3">MarkAllSlotsDirtyByType</a> (const FGameplayTag &amp;SlotType)</td></tr>
+<tr class="separator:a7edf53941cb44cd609156bacb9575ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a690731feaa7490f8231b136ffdc9f6" id="r_a2a690731feaa7490f8231b136ffdc9f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a2a690731feaa7490f8231b136ffdc9f6">MarkContainerDirty</a> ()</td></tr>
 <tr class="separator:a2a690731feaa7490f8231b136ffdc9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4235d633ab0306f584dab491c1188360" id="r_a4235d633ab0306f584dab491c1188360"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a4235d633ab0306f584dab491c1188360">GetDebugString</a> (bool bDetailed) const</td></tr>
@@ -378,6 +379,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae34b097cbdad8b05d2c1dcf813671226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2784a21b1f556d61f1f2d3cf41939e3" id="r_aa2784a21b1f556d61f1f2d3cf41939e3"><td class="memItemLeft" align="right" valign="top">const FGameplayTagContainer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#aa2784a21b1f556d61f1f2d3cf41939e3">GetGameplayContainerOperationsTags</a> () const</td></tr>
 <tr class="separator:aa2784a21b1f556d61f1f2d3cf41939e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d84b8c6d8777172560d6a487fa71c0" id="r_a66d84b8c6d8777172560d6a487fa71c0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a66d84b8c6d8777172560d6a487fa71c0">CanUseContainer</a> () const</td></tr>
+<tr class="separator:a66d84b8c6d8777172560d6a487fa71c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a1b0adeb6bd686a562f3136fa612bad" id="r_a4a1b0adeb6bd686a562f3136fa612bad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a4a1b0adeb6bd686a562f3136fa612bad">BP_OnContainerInitialized</a> ()</td></tr>
 <tr class="separator:a4a1b0adeb6bd686a562f3136fa612bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b8b8800f0c8967f5c5abaee56f2ff88" id="r_a6b8b8800f0c8967f5c5abaee56f2ff88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a6b8b8800f0c8967f5c5abaee56f2ff88">BP_OnContainerUninitialized</a> ()</td></tr>
@@ -451,8 +454,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a74d7f9eabb9ec30f7d87a9c9869c6943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dc4b2c6ebed8b88d497e812e6bbd3d7" id="r_a3dc4b2c6ebed8b88d497e812e6bbd3d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a3dc4b2c6ebed8b88d497e812e6bbd3d7">OnContainerDynamicTagsChanged</a> ()</td></tr>
 <tr class="separator:a3dc4b2c6ebed8b88d497e812e6bbd3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66d84b8c6d8777172560d6a487fa71c0" id="r_a66d84b8c6d8777172560d6a487fa71c0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_component.html#a66d84b8c6d8777172560d6a487fa71c0">CanUseContainer</a> () const</td></tr>
-<tr class="separator:a66d84b8c6d8777172560d6a487fa71c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -523,10 +524,11 @@ Friends</h2></td></tr>
 <p>Constructor for the GameplayContainerComponent.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ObjectInitializer</td><td>The object initializer for initializing the component. </td></tr>
+    <tr><td class="paramname">ObjectInitializer</td><td>The object initializer for initializing the component.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Copyright (C) 2024 Nazake. All Rights Reserved. </p>
 
 </div>
 </div>
@@ -574,7 +576,7 @@ Friends</h2></td></tr>
     <tr><td class="paramname">ItemDefinition</td><td>The subclass of <a class="el" href="class_u_gameplay_item_definition.html">UGameplayItemDefinition</a> representing the item to add. </td></tr>
     <tr><td class="paramname">SlotType</td><td>The type of container slots where the items should be added. </td></tr>
     <tr><td class="paramname">Quantity</td><td>The quantity of items to add. </td></tr>
-    <tr><td class="paramname">AddedQuantity</td><td>The quantity of items successfully added. </td></tr>
+    <tr><td class="paramname">AddedQuantity</td><td>The quantity of items successfully added.</td></tr>
   </table>
   </dd>
 </dl>
@@ -626,7 +628,7 @@ Friends</h2></td></tr>
     <tr><td class="paramname">ItemInstance</td><td>The existing item instance to add. </td></tr>
     <tr><td class="paramname">SlotType</td><td>The type of container slots where the items should be added. </td></tr>
     <tr><td class="paramname">Quantity</td><td>The quantity of items to add. </td></tr>
-    <tr><td class="paramname">AddedQuantity</td><td>The quantity of items successfully added. </td></tr>
+    <tr><td class="paramname">AddedQuantity</td><td>The quantity of items successfully added.</td></tr>
   </table>
   </dd>
 </dl>
@@ -673,13 +675,13 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Attempts to add a partial quantity of a specified item to the container.</p>
-<p>This function tries to add as much of the specified item's quantity as possible to the container, without necessarily fully meeting the requested quantity.</p>
+<dl class="section note"><dt>Note</dt><dd>This function tries to add as much of the specified item's quantity as possible to the container, without necessarily fully meeting the requested quantity.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ItemDefinition</td><td>The subclass of <a class="el" href="class_u_gameplay_item_definition.html">UGameplayItemDefinition</a> representing the item to add. </td></tr>
     <tr><td class="paramname">SlotType</td><td>The type of slot where the item should be added. </td></tr>
     <tr><td class="paramname">Quantity</td><td>The desired quantity of the item to add. </td></tr>
-    <tr><td class="paramname">AddedQuantity</td><td>The actual quantity of the item added to the container. </td></tr>
+    <tr><td class="paramname">AddedQuantity</td><td>The actual quantity of the item added to the container.</td></tr>
   </table>
   </dd>
 </dl>
@@ -840,7 +842,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Attempts to stack an item of the same type within a specific slot type. </p><dl class="section note"><dt>Note</dt><dd>Items that can be stacked should not have a state that might change across multiple item instances (eg. Durability).</dd></dl>
+<p>Attempts to stack an item of the same type within a specific slot type.</p>
+<dl class="section note"><dt>Note</dt><dd>Items that can be stacked should not have a state that might change across multiple item instances (eg. Durability).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ItemDefinition</td><td>The item definition for which to calculate missing stacks. </td></tr>
@@ -890,7 +893,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Attempts to stack an item of the same type within a specific slot type. </p><dl class="section note"><dt>Note</dt><dd>Items that can be stacked should not have a state that might change across multiple item instances (eg. Durability).</dd></dl>
+<p>Attempts to stack an item of the same type within a specific slot type.</p>
+<dl class="section note"><dt>Note</dt><dd>Items that can be stacked should not have a state that might change across multiple item instances (eg. Durability).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ItemDefinition</td><td>The item definition for which to calculate missing stacks. </td></tr>
@@ -940,7 +944,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Attempts to stack an existing item instance with items of the same type within a specific slot type. </p><dl class="section note"><dt>Note</dt><dd>Items that can be stacked should not have a state that might change across multiple item instances (eg. Durability).</dd></dl>
+<p>Attempts to stack an existing item instance with items of the same type within a specific slot type.</p>
+<dl class="section note"><dt>Note</dt><dd>Items that can be stacked should not have a state that might change across multiple item instances (eg. Durability).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ItemInstance</td><td>The item instance to stack. </td></tr>
@@ -990,7 +995,8 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Attempts to stack an existing item instance with items of the same type within a specific slot type. </p><dl class="section note"><dt>Note</dt><dd>Items that can be stacked should not have a state that might change across multiple item instances (eg. Durability).</dd></dl>
+<p>Attempts to stack an existing item instance with items of the same type within a specific slot type.</p>
+<dl class="section note"><dt>Note</dt><dd>Items that can be stacked should not have a state that might change across multiple item instances (eg. Durability).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ItemInstance</td><td>The item instance to stack. </td></tr>
@@ -1241,6 +1247,15 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates the total quantity of a specific item instance in the container.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ItemInstance</td><td>The item instance representing the item to count. </td></tr>
+    <tr><td class="paramname">bIncludeBlockedSlots</td><td>If true, include items in slots that cannot be used. Otherwise, only count items in usable slots.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The total quantity of the specified item instance in the container. </dd></dl>
 
 </div>
 </div>
@@ -1275,6 +1290,16 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Calculates the total quantity of a specific item instance within slots of a specified type in the container.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SlotType</td><td>The type of the container slots to search. </td></tr>
+    <tr><td class="paramname">ItemInstance</td><td>The item instance representing the item to count. </td></tr>
+    <tr><td class="paramname">bIncludeBlockedSlots</td><td>If true, include items in slots that cannot be used. Otherwise, only count items in usable slots.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The total quantity of the specified item instance within slots of the specified type in the container. </dd></dl>
 
 </div>
 </div>
@@ -1346,7 +1371,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculates the total quantity of a specific overflowing item within slots of a specified type in the container.</p>
+<p>Calculates the total quantity of a specific item within slots of a specified type in the container.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">SlotType</td><td>The type of the container slots to search. </td></tr>
@@ -1414,7 +1439,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ItemDefinition</td><td>The subclass of <a class="el" href="class_u_gameplay_item_definition.html">UGameplayItemDefinition</a> representing the item to calculate the carriable quantity. </td></tr>
-    <tr><td class="paramname">SlotType</td><td>The type of the container slots to consider for carrying the item. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The type of the container slots to consider for carrying the item.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1440,7 +1465,7 @@ Friends</h2></td></tr>
 <p>Calculates the quantity of missing item stacks needed to reach the maximum capacity for a specific item within the container.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ItemDefinition</td><td>The subclass of <a class="el" href="class_u_gameplay_item_definition.html">UGameplayItemDefinition</a> representing the item to calculate missing stacks for. </td></tr>
+    <tr><td class="paramname">ItemDefinition</td><td>The subclass of <a class="el" href="class_u_gameplay_item_definition.html">UGameplayItemDefinition</a> representing the item to calculate missing stacks for.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1477,7 +1502,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ItemDefinition</td><td>The item definition for which to calculate missing stacks. </td></tr>
-    <tr><td class="paramname">SlotType</td><td>The slot type to consider for calculating missing stacks. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The slot type to consider for calculating missing stacks.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1516,6 +1541,16 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if adding a specific quantity of an item to slots of the specified type is possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ItemDefinition</td><td>The Gameplay Item Definition of the item to check for adding. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The GameplayTag representing the type of slots for adding the item. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The desired quantity for adding.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if adding the item is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1550,6 +1585,16 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if adding a specific quantity of an item instance to slots of the specified type is possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ItemInstance</td><td>The Gameplay Item Instance of the item to check for adding. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The GameplayTag representing the type of slots for adding the item instance. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The desired quantity for adding.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if adding the item instance is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1571,7 +1616,7 @@ Friends</h2></td></tr>
 <p>Checks if the gameplay container can carry the specified item quantities. </p><dl class="section see"><dt>See also</dt><dd>O(N * M) [N: ItemQuantities, M: Slots]</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ItemQuantities</td><td>The map of item definitions to quantities. </td></tr>
+    <tr><td class="paramname">ItemQuantities</td><td>The map of item definitions to quantities.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1608,7 +1653,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">SlotType</td><td>The gameplay tag representing the type of slots. </td></tr>
-    <tr><td class="paramname">ItemQuantities</td><td>The map of item definitions to quantities. </td></tr>
+    <tr><td class="paramname">ItemQuantities</td><td>The map of item definitions to quantities.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1645,7 +1690,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ItemDefinition</td><td>The subclass of <a class="el" href="class_u_gameplay_item_definition.html">UGameplayItemDefinition</a> representing the item to check. </td></tr>
-    <tr><td class="paramname">Quantity</td><td>The quantity of the item to check for carryability. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The quantity of the item to check for carryability.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1689,7 +1734,7 @@ Friends</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">SlotType</td><td>The type of the container slots to consider for carrying the item. </td></tr>
     <tr><td class="paramname">ItemDefinition</td><td>The subclass of <a class="el" href="class_u_gameplay_item_definition.html">UGameplayItemDefinition</a> representing the item to check. </td></tr>
-    <tr><td class="paramname">Quantity</td><td>The quantity of the item to check for carryability. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The quantity of the item to check for carryability.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1715,7 +1760,7 @@ Friends</h2></td></tr>
 <p>Checks if the gameplay container can carry a specific item with a partial quantity.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ItemDefinition</td><td>The class of the gameplay item definition to check. </td></tr>
+    <tr><td class="paramname">ItemDefinition</td><td>The class of the gameplay item definition to check.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1752,7 +1797,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">SlotType</td><td>The gameplay tag representing the type of slots to check. </td></tr>
-    <tr><td class="paramname">ItemDefinition</td><td>The class of the gameplay item definition to check. </td></tr>
+    <tr><td class="paramname">ItemDefinition</td><td>The class of the gameplay item definition to check.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1791,6 +1836,16 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if dropping a specific quantity of a Gameplay Item Definition from slots of the specified type is possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ItemDefinition</td><td>The Gameplay Item Definition to check for dropping. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The GameplayTag representing the type of slots for dropping the item. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The desired quantity for dropping.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if dropping the item is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1819,6 +1874,15 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if dropping items from the specified slot is possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SlotHandle</td><td>The handle to the slot from which items are being dropped. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The quantity of items intended to be dropped from the slot.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if dropping the items is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1853,6 +1917,16 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if dropping a specific quantity of a Gameplay Item Instance from slots of the specified type is possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ItemInstance</td><td>The Gameplay Item Instance to check for dropping. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The GameplayTag representing the type of slots for dropping the item instance. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The desired quantity for dropping.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if dropping the item instance is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1881,6 +1955,15 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if moving an item from the source slot to the destination slot is possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SourceSlotHandle</td><td>The handle to the source slot from which the item is moved. </td></tr>
+    <tr><td class="paramname">DestinationSlotHandle</td><td>The handle to the destination slot to which the item is moved.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if moving the item is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1915,6 +1998,16 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if removing a specific quantity of an item from slots of the specified type is possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ItemDefinition</td><td>The UClass of the Gameplay Item Definition for the item to check for removal. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The GameplayTag representing the type of slots for removing the item. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The desired quantity for removal.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if removing the item is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1943,6 +2036,15 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if removing a specific quantity of items from the specified slot is possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SlotHandle</td><td>The handle to the target slot for removing items. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The desired quantity for removal.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if removing the items from the slot is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1977,6 +2079,16 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if removing a specific quantity of a Gameplay Item Instance from slots of the specified type is possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ItemInstance</td><td>The Gameplay Item Instance to check for removal. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The GameplayTag representing the type of slots for removing the item instance. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The desired quantity for removal.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if removing the item instance is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -2011,6 +2123,16 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if splitting a specific quantity of items from the source slot to the destination slot is possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SourceSlotHandle</td><td>The handle to the source slot from which items are split. </td></tr>
+    <tr><td class="paramname">DestinationSlotHandle</td><td>The handle to the destination slot to which items are split. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The desired quantity for splitting.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if splitting the items is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -2045,6 +2167,16 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if stacking a specific quantity of items from the source slot to the destination slot is possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SourceSlotHandle</td><td>The handle to the source slot from which items are stacked. </td></tr>
+    <tr><td class="paramname">DestinationSlotHandle</td><td>The handle to the destination slot to which items are stacked. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The desired quantity for stacking.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if stacking the items is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -2079,6 +2211,16 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if an item, defined by its Gameplay Item Definition, can be stacked in slots of the specified type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ItemDefinition</td><td>The Gameplay Item Definition of the item to check for stacking. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The GameplayTag representing the type of slots for stacking. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The desired quantity for stacking.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if stacking the requested quantity is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -2113,6 +2255,16 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if the provided item instance can be stacked in slots of the specified type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ItemInstance</td><td>The Gameplay Item Instance to check for missing stacks. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The GameplayTag representing the type of slots for stacking. </td></tr>
+    <tr><td class="paramname">Quantity</td><td>The desired quantity for stacking.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if stacking the requested quantity is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -2141,6 +2293,15 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if swapping items between the specified source and destination slots is possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SourceSlotHandle</td><td>The handle to the source slot from which the item is swapped. </td></tr>
+    <tr><td class="paramname">DestinationSlotHandle</td><td>The handle to the destination slot to which the item is swapped.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if swapping the items is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -2175,6 +2336,104 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Checks if transferring an item from the specified slot to the destination container's slot is possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SlotHandle</td><td>The handle to the source slot from which the item is transferred. </td></tr>
+    <tr><td class="paramname">DestinationContainer</td><td>The destination container to which the item is transferred. </td></tr>
+    <tr><td class="paramname">DestinationSlotType</td><td>The slot type in the destination container where the item is transferred.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if transferring the item is possible, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a93cda27c331b96493d93175167a0d0ef" name="a93cda27c331b96493d93175167a0d0ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93cda27c331b96493d93175167a0d0ef">&#9670;&#160;</a></span>CanTransferPartialItemsToContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UGameplayContainerComponent::CanTransferPartialItemsToContainer </td>
+          <td>(</td>
+          <td class="paramtype">const FGameplayTag &amp;&#160;</td>
+          <td class="paramname"><em>SourceSlotType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *&#160;</td>
+          <td class="paramname"><em>DestinationContainer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FGameplayTag &amp;&#160;</td>
+          <td class="paramname"><em>DestinationSlotType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks if partial items can be transferred from the specified source slot type to the specified destination container and slot type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SourceSlotType</td><td>The gameplay tag representing the source slot type. </td></tr>
+    <tr><td class="paramname">DestinationContainer</td><td>The destination container to transfer the partial items to. </td></tr>
+    <tr><td class="paramname">DestinationSlotType</td><td>The gameplay tag representing the destination slot type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if partial items can be transferred to the destination container, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ac371121732a25366fdb6bfe7866d7eb1" name="ac371121732a25366fdb6bfe7866d7eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac371121732a25366fdb6bfe7866d7eb1">&#9670;&#160;</a></span>CanTransferPartialItemToContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UGameplayContainerComponent::CanTransferPartialItemToContainer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_f_gameplay_container_slot_handle.html">FGameplayContainerSlotHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>SlotHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *&#160;</td>
+          <td class="paramname"><em>DestinationContainer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FGameplayTag &amp;&#160;</td>
+          <td class="paramname"><em>DestinationSlotType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks if a partial item can be transferred from the specified slot to the specified destination container and slot type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SlotHandle</td><td>The handle of the slot containing the partial item to transfer. </td></tr>
+    <tr><td class="paramname">DestinationContainer</td><td>The destination container to transfer the partial item to. </td></tr>
+    <tr><td class="paramname">DestinationSlotType</td><td>The gameplay tag representing the destination slot type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the partial item can be transferred to the destination container, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -2196,7 +2455,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2485,6 +2744,16 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Check if a specific item instance exists in slots of a specified type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SlotType</td><td>The gameplay tag representing the type of slots to check. </td></tr>
+    <tr><td class="paramname">ItemInstance</td><td>The item instance to check for. </td></tr>
+    <tr><td class="paramname">bIncludeBlockedSlots</td><td>If true, include items in slots that cannot be used. Otherwise, only search in usable slots. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the item instance exists in slots of the specified type, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -2652,7 +2921,7 @@ Friends</h2></td></tr>
 <p>Duplicates a gameplay item instance.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ItemInstance</td><td>The gameplay item instance to duplicate. </td></tr>
+    <tr><td class="paramname">ItemInstance</td><td>The gameplay item instance to duplicate.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3108,6 +3377,25 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a82ee3ae95f4cfc2f172b3284627a55c5" name="a82ee3ae95f4cfc2f172b3284627a55c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ee3ae95f4cfc2f172b3284627a55c5">&#9670;&#160;</a></span>GetContainerManager_Mutable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_f_gameplay_container_manager.html">FGameplayContainerManager</a> &amp; UGameplayContainerComponent::GetContainerManager_Mutable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieve a mutable reference to the gameplay container represented by this component.</p>
+<dl class="section return"><dt>Returns</dt><dd>A mutable reference to the gameplay container of this component. </dd></dl>
+
+</div>
+</div>
 <a id="aa3bb5b2784b726c2070fcdcfb3d48c20" name="aa3bb5b2784b726c2070fcdcfb3d48c20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3bb5b2784b726c2070fcdcfb3d48c20">&#9670;&#160;</a></span>GetContainerRecentChangeDetectionDelegate()</h2>
 
@@ -3183,7 +3471,7 @@ Friends</h2></td></tr>
 <p>Generates a debug string representing the current state of the gameplay container component.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bDetailed</td><td>If true, provide a detailed debugging representation including all properties, if false, provide a concise representation. </td></tr>
+    <tr><td class="paramname">bDetailed</td><td>If true, provide a detailed debugging representation including all properties, if false, provide a concise representation.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3440,20 +3728,22 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a63163a1048d213927171d0cb1ac11d43" name="a63163a1048d213927171d0cb1ac11d43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63163a1048d213927171d0cb1ac11d43">&#9670;&#160;</a></span>GetReigsteredUsers()</h2>
+<a id="a92557d6d3a6f8b7dcf177d355c1b5e55" name="a92557d6d3a6f8b7dcf177d355c1b5e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92557d6d3a6f8b7dcf177d355c1b5e55">&#9670;&#160;</a></span>GetRegisteredUsers()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const TArray&lt; UAbilitySystemComponent * &gt; &amp; UGameplayContainerComponent::GetReigsteredUsers </td>
+          <td class="memname">const TArray&lt; UAbilitySystemComponent * &gt; &amp; UGameplayContainerComponent::GetRegisteredUsers </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Gets the list of all registered users with this Gameplay Container.</p>
+<dl class="section return"><dt>Returns</dt><dd>Array of Ability System Components representing registered users. </dd></dl>
 
 </div>
 </div>
@@ -3622,10 +3912,10 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Retrieve the gameplay container slot definition by slot type.</p>
-<p>This function allows you to obtain the gameplay container slot definition associated with a specific slot type. You provide the desired slot type as a parameter, and the function returns the corresponding slot definition, if it exists.</p>
+<dl class="section note"><dt>Note</dt><dd>This function allows you to obtain the gameplay container slot definition associated with a specific slot type. You provide the desired slot type as a parameter, and the function returns the corresponding slot definition, if it exists.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">SlotType</td><td>The Gameplay Tag representing the slot type to query. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The Gameplay Tag representing the slot type to query.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3648,6 +3938,14 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Retrieves a handle of a container slot by its index.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Index</td><td>The index of the container slot to retrieve. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The handle of the specified container slot. </dd></dl>
 
 </div>
 </div>
@@ -3693,6 +3991,25 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Retrieves a read-only reference to the slots within this gameplay container.</p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the slots. </dd></dl>
+
+</div>
+</div>
+<a id="a2a92ce612d7c8e700baf3e75f91ca333" name="a2a92ce612d7c8e700baf3e75f91ca333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a92ce612d7c8e700baf3e75f91ca333">&#9670;&#160;</a></span>GetSlots_Mutable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TArray&lt; <a class="el" href="struct_f_gameplay_container_slot.html">FGameplayContainerSlot</a> &gt; &amp; UGameplayContainerComponent::GetSlots_Mutable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieves a mutable reference to the slots within this gameplay container.</p>
+<dl class="section return"><dt>Returns</dt><dd>A mutable reference to the slots. </dd></dl>
 
 </div>
 </div>
@@ -4304,6 +4621,75 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="adbd6d4366f758e5261d01f516b93c14c" name="adbd6d4366f758e5261d01f516b93c14c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd6d4366f758e5261d01f516b93c14c">&#9670;&#160;</a></span>IsUserRegistered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UGameplayContainerComponent::IsUserRegistered </td>
+          <td>(</td>
+          <td class="paramtype">UAbilitySystemComponent *&#160;</td>
+          <td class="paramname"><em>AbilitySystem</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks if a specific user is registered with this Gameplay Container.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">AbilitySystem</td><td>The Ability System Component of the user.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the user is registered, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="acf51dc658febe7867d6ec3e12447c354" name="acf51dc658febe7867d6ec3e12447c354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf51dc658febe7867d6ec3e12447c354">&#9670;&#160;</a></span>MarkAllSlotsDirty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UGameplayContainerComponent::MarkAllSlotsDirty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Marks all slots in the container as dirty, triggering a refresh of their state. </p>
+
+</div>
+</div>
+<a id="a7edf53941cb44cd609156bacb9575ce3" name="a7edf53941cb44cd609156bacb9575ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7edf53941cb44cd609156bacb9575ce3">&#9670;&#160;</a></span>MarkAllSlotsDirtyByType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UGameplayContainerComponent::MarkAllSlotsDirtyByType </td>
+          <td>(</td>
+          <td class="paramtype">const FGameplayTag &amp;&#160;</td>
+          <td class="paramname"><em>SlotType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Marks all slots of a specific type in the container as dirty, triggering a refresh of their state. This function should be called when changes to the container may affect the state of slots of a particular type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SlotType</td><td>The gameplay tag representing the type of slots to mark as dirty. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2a690731feaa7490f8231b136ffdc9f6" name="a2a690731feaa7490f8231b136ffdc9f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a690731feaa7490f8231b136ffdc9f6">&#9670;&#160;</a></span>MarkContainerDirty()</h2>
 
@@ -4780,6 +5166,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Registers a user with this Gameplay Container. </p>
 
 </div>
 </div>
@@ -5082,6 +5469,49 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="abfa8209478d48913b6d3eca4f832c3bf" name="abfa8209478d48913b6d3eca4f832c3bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa8209478d48913b6d3eca4f832c3bf">&#9670;&#160;</a></span>SortItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UGameplayContainerComponent::SortItems </td>
+          <td>(</td>
+          <td class="paramtype">TSubclassOf&lt; <a class="el" href="class_u_gameplay_container_item_sorting_option.html">UGameplayContainerItemSortingOption</a> &gt;&#160;</td>
+          <td class="paramname"><em>SortingOption</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FGameplayTag &amp;&#160;</td>
+          <td class="paramname"><em>SlotType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>bIncludeBlockedSlots</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sorts items within a specific slot type in the container using the specified sorting option.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SortingOption</td><td>The subclass of <a class="el" href="class_u_gameplay_container_item_sorting_option.html">UGameplayContainerItemSortingOption</a> used for sorting items. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The gameplay tag representing the type of slots to sort items within. </td></tr>
+    <tr><td class="paramname">bIncludeBlockedSlots</td><td>Whether to include blocked slots in the sorting process. Defaults to false. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a664c892e28c9c769657d9aba213c090c" name="a664c892e28c9c769657d9aba213c090c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a664c892e28c9c769657d9aba213c090c">&#9670;&#160;</a></span>SplitItemStackToSlot()</h2>
 
@@ -5302,6 +5732,94 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a2e4888a9a472f7bbc44fdc161fde1257" name="a2e4888a9a472f7bbc44fdc161fde1257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e4888a9a472f7bbc44fdc161fde1257">&#9670;&#160;</a></span>TransferPartialItemsToContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UGameplayContainerComponent::TransferPartialItemsToContainer </td>
+          <td>(</td>
+          <td class="paramtype">const FGameplayTag &amp;&#160;</td>
+          <td class="paramname"><em>SourceSlotType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *&#160;</td>
+          <td class="paramname"><em>DestinationContainer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FGameplayTag &amp;&#160;</td>
+          <td class="paramname"><em>DestinationSlotType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transfers partial items from the specified source slot type to the specified destination container and slot type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SourceSlotType</td><td>The gameplay tag representing the source slot type. </td></tr>
+    <tr><td class="paramname">DestinationContainer</td><td>The destination container to transfer the partial items to. </td></tr>
+    <tr><td class="paramname">DestinationSlotType</td><td>The gameplay tag representing the destination slot type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if partial items were successfully transferred, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a88dd8e13b17b818ed91bd43bb6707d38" name="a88dd8e13b17b818ed91bd43bb6707d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88dd8e13b17b818ed91bd43bb6707d38">&#9670;&#160;</a></span>TransferPartialItemToContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UGameplayContainerComponent::TransferPartialItemToContainer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_f_gameplay_container_slot_handle.html">FGameplayContainerSlotHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>SlotHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *&#160;</td>
+          <td class="paramname"><em>DestinationContainer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FGameplayTag &amp;&#160;</td>
+          <td class="paramname"><em>DestinationSlotType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transfers a partial item from the specified slot to the specified destination container and slot type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SlotHandle</td><td>The handle of the slot containing the partial item to transfer. </td></tr>
+    <tr><td class="paramname">DestinationContainer</td><td>The destination container to transfer the partial item to. </td></tr>
+    <tr><td class="paramname">DestinationSlotType</td><td>The gameplay tag representing the destination slot type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the partial item was successfully transferred, false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a1b9fe466d1ae5cfcd3cdeb8db8547a76" name="a1b9fe466d1ae5cfcd3cdeb8db8547a76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b9fe466d1ae5cfcd3cdeb8db8547a76">&#9670;&#160;</a></span>UninitializeComponent()</h2>
 
@@ -5407,6 +5925,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Unregisters a user from this Gameplay Container. </p>
 
 </div>
 </div>
@@ -5579,7 +6098,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The gameplay container definition used to define the container's configurations.</p>
-<p>This property references a gameplay container definition class that defines the container's behavior, attributes, and any associated configurations. It allows you to specify the container's characteristics. </p>
+<dl class="section note"><dt>Note</dt><dd>This references a gameplay container definition class that defines the container's behavior, attributes, and any associated configurations. It allows you to specify the container's characteristics. </dd></dl>
 
 </div>
 </div>
@@ -5838,17 +6357,13 @@ Friends</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Public/Core/<a class="el" href="_gameplay_container_component_8h_source.html">GameplayContainerComponent.h</a></li>
-<li>Private/Core/<a class="el" href="_gameplay_container_component_8cpp.html">GameplayContainerComponent.cpp</a></li>
+<li>GameplayContainers/Public/Core/<a class="el" href="_gameplay_container_component_8h_source.html">GameplayContainerComponent.h</a></li>
+<li>GameplayContainers/Private/Core/<a class="el" href="_gameplay_container_component_8cpp.html">GameplayContainerComponent.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
 </body>
 </html>

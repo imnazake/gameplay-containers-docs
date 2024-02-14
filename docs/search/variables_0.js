@@ -14,9 +14,10 @@ var searchData=
   ['activeslot_11',['ActiveSlot',['../class_u_hotbar_component.html#a9a815e037ceba9d1738110f37fc0b584',1,'UHotbarComponent']]],
   ['actorstospawn_12',['ActorsToSpawn',['../class_u_gameplay_equipment_definition.html#ad75a7f49259ca9e01a00bb1542b49910',1,'UGameplayEquipmentDefinition']]],
   ['actortospawn_13',['ActorToSpawn',['../struct_f_gameplay_equipment_actor_to_spawn.html#a9e404176a857e1d7b29de5c763b436eb',1,'FGameplayEquipmentActorToSpawn']]],
-  ['attachsocket_14',['AttachSocket',['../struct_f_gameplay_equipment_actor_to_spawn.html#ae293480f703a9e0621717f1a3a7902ab',1,'FGameplayEquipmentActorToSpawn']]],
-  ['attachtransform_15',['AttachTransform',['../struct_f_gameplay_equipment_actor_to_spawn.html#a0e3c163b0ce12854ab9ec809979b1385',1,'FGameplayEquipmentActorToSpawn']]],
-  ['attributesetclass_16',['attributesetclass',['../class_u_gameplay_container_slot_fragment___attribute_set.html#a6ab6790d03148adc83072a5a9062bd05',1,'UGameplayContainerSlotFragment_AttributeSet::AttributeSetClass'],['../struct_f_gameplay_ability_set___attribute_set.html#aea1362e49d0bf1ace4432dbfcb6e00e6',1,'FGameplayAbilitySet_AttributeSet::AttributeSetClass']]],
-  ['attributesets_17',['attributesets',['../struct_f_gameplay_ability_set___granted_handles.html#a250a825e63d91cd3cdc5bef06b9ced39',1,'FGameplayAbilitySet_GrantedHandles::AttributeSets'],['../class_u_gameplay_container_component.html#a5ed32e28f31940e381c80cd480a735ab',1,'UGameplayContainerComponent::AttributeSets']]],
-  ['attributesmappings_18',['AttributesMappings',['../class_u_gameplay_container_settings.html#ac48402862513bf2516278ca572d19e7f',1,'UGameplayContainerSettings']]]
+  ['additionalcosts_14',['AdditionalCosts',['../class_u_gameplay_ability___base.html#af25d5fc39b1a14e667706c9c87858152',1,'UGameplayAbility_Base']]],
+  ['attachsocket_15',['AttachSocket',['../struct_f_gameplay_equipment_actor_to_spawn.html#ae293480f703a9e0621717f1a3a7902ab',1,'FGameplayEquipmentActorToSpawn']]],
+  ['attachtransform_16',['AttachTransform',['../struct_f_gameplay_equipment_actor_to_spawn.html#a0e3c163b0ce12854ab9ec809979b1385',1,'FGameplayEquipmentActorToSpawn']]],
+  ['attributesetclass_17',['attributesetclass',['../class_u_gameplay_container_slot_fragment___attribute_set.html#a6ab6790d03148adc83072a5a9062bd05',1,'UGameplayContainerSlotFragment_AttributeSet::AttributeSetClass'],['../struct_f_gameplay_ability_set___attribute_set.html#aea1362e49d0bf1ace4432dbfcb6e00e6',1,'FGameplayAbilitySet_AttributeSet::AttributeSetClass']]],
+  ['attributesets_18',['attributesets',['../struct_f_gameplay_ability_set___granted_handles.html#a250a825e63d91cd3cdc5bef06b9ced39',1,'FGameplayAbilitySet_GrantedHandles::AttributeSets'],['../class_u_gameplay_container_component.html#a5ed32e28f31940e381c80cd480a735ab',1,'UGameplayContainerComponent::AttributeSets']]],
+  ['attributesmappings_19',['AttributesMappings',['../class_u_gameplay_container_settings.html#ac48402862513bf2516278ca572d19e7f',1,'UGameplayContainerSettings']]]
 ];

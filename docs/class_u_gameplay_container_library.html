@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,8 +20,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="gc.ico"/></td>
   <td id="projectalign">
-   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.1</span>
    </div>
   </td>
  </tr>
@@ -50,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_u_gameplay_container_library.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,6 +68,7 @@ $(document).ready(function(){initNavTree('class_u_gameplay_container_library.htm
 </div>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -112,8 +93,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aac604cf272cf1d14b77691044af3abb2" id="r_aac604cf272cf1d14b77691044af3abb2"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#aac604cf272cf1d14b77691044af3abb2">CalculateNormalizedPercentage</a> (const float CurrentValue, const float MaxValue)</td></tr>
-<tr class="separator:aac604cf272cf1d14b77691044af3abb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa37bc02bcad658fbff31dcc8e6b28e" id="r_a9fa37bc02bcad658fbff31dcc8e6b28e"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a9fa37bc02bcad658fbff31dcc8e6b28e">CalculatePercentage_Normalized</a> (const float CurrentValue, const float MaxValue)</td></tr>
+<tr class="separator:a9fa37bc02bcad658fbff31dcc8e6b28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b8188cc380a580dfd78682e74c191ca" id="r_a4b8188cc380a580dfd78682e74c191ca"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a4b8188cc380a580dfd78682e74c191ca">CalculatePercentage</a> (const float CurrentValue, const float MaxValue)</td></tr>
 <tr class="separator:a4b8188cc380a580dfd78682e74c191ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00c3a8f751ab89a44919728ed3ef645a" id="r_a00c3a8f751ab89a44919728ed3ef645a"><td class="memItemLeft" align="right" valign="top">static UObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a00c3a8f751ab89a44919728ed3ef645a">GetClassDefaultObject</a> (TSubclassOf&lt; UObject &gt; Class)</td></tr>
@@ -168,12 +149,30 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a288f43f55db5eb4ee35f77e5537fc0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d4e652d11118970c2d335316a1a68bd" id="r_a5d4e652d11118970c2d335316a1a68bd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a5d4e652d11118970c2d335316a1a68bd">EqualEqual_FWorldItemContent</a> (const <a class="el" href="struct_f_world_item_content.html">FWorldItemContent</a> &amp;Data, const <a class="el" href="struct_f_world_item_content.html">FWorldItemContent</a> &amp;OtherData)</td></tr>
 <tr class="separator:a5d4e652d11118970c2d335316a1a68bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a62821a8ed86301faeae572d2ff8de8" id="r_a3a62821a8ed86301faeae572d2ff8de8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a3a62821a8ed86301faeae572d2ff8de8">CanLootItem</a> (AActor *WorldItem, const <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *TargetContainer, const FGameplayTag SlotType)</td></tr>
-<tr class="separator:a3a62821a8ed86301faeae572d2ff8de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab168aa986b72b39c9a0d9fac6b9a0180" id="r_ab168aa986b72b39c9a0d9fac6b9a0180"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#ab168aa986b72b39c9a0d9fac6b9a0180">LootItem</a> (AActor *WorldItem, <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *TargetContainer, const FGameplayTag SlotType)</td></tr>
-<tr class="separator:ab168aa986b72b39c9a0d9fac6b9a0180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58bcadbd6e860b31fa86d4a2bfaa7128" id="r_a58bcadbd6e860b31fa86d4a2bfaa7128"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a58bcadbd6e860b31fa86d4a2bfaa7128">EqualEqual_FRandomLootGenerationParameter</a> (const <a class="el" href="struct_f_random_loot_generation_parameter.html">FRandomLootGenerationParameter</a> &amp;Data, const <a class="el" href="struct_f_random_loot_generation_parameter.html">FRandomLootGenerationParameter</a> &amp;OtherData)</td></tr>
+<tr class="separator:a58bcadbd6e860b31fa86d4a2bfaa7128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870997d194194523f293dd7fab8e44de" id="r_a870997d194194523f293dd7fab8e44de"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a870997d194194523f293dd7fab8e44de">EqualEqual_FRandomLootGenerationResult</a> (const <a class="el" href="struct_f_random_loot_generation_result.html">FRandomLootGenerationResult</a> &amp;Data, const <a class="el" href="struct_f_random_loot_generation_result.html">FRandomLootGenerationResult</a> &amp;OtherData)</td></tr>
+<tr class="separator:a870997d194194523f293dd7fab8e44de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b26d9380d6394d6a7a5c02ad190bf6e" id="r_a3b26d9380d6394d6a7a5c02ad190bf6e"><td class="memItemLeft" align="right" valign="top">static UAbilitySystemComponent *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a3b26d9380d6394d6a7a5c02ad190bf6e">GetAbilitySystemFromGameplayContainer</a> (const APlayerController *PlayerController, const <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *TargetContainer)</td></tr>
+<tr class="separator:a3b26d9380d6394d6a7a5c02ad190bf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f0adad0e140ac9f42c6eefe213ce4f" id="r_a17f0adad0e140ac9f42c6eefe213ce4f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a17f0adad0e140ac9f42c6eefe213ce4f">SendGameplayContainerRequest</a> (UObject *WorldContext, const <a class="el" href="struct_f_gameplay_container_request.html">FGameplayContainerRequest</a> &amp;Data)</td></tr>
+<tr class="separator:a17f0adad0e140ac9f42c6eefe213ce4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e5c9919f13cbeb263401413a0856d44" id="r_a5e5c9919f13cbeb263401413a0856d44"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a5e5c9919f13cbeb263401413a0856d44">CanLootItem</a> (AActor *WorldItem, const <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *TargetContainer, const FGameplayTag &amp;SlotType)</td></tr>
+<tr class="separator:a5e5c9919f13cbeb263401413a0856d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c7ec0c806755a4f721df39863cd7b7" id="r_a14c7ec0c806755a4f721df39863cd7b7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a14c7ec0c806755a4f721df39863cd7b7">LootItem</a> (AActor *WorldItem, <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *TargetContainer, const FGameplayTag &amp;SlotType)</td></tr>
+<tr class="separator:a14c7ec0c806755a4f721df39863cd7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addedf1259966f424677c5d54430c5c2f" id="r_addedf1259966f424677c5d54430c5c2f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#addedf1259966f424677c5d54430c5c2f">CanLootPartialItem</a> (AActor *WorldItem, const <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *TargetContainer, const FGameplayTag &amp;SlotType)</td></tr>
+<tr class="separator:addedf1259966f424677c5d54430c5c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b50240a5cd6908767ed980cc5005d23" id="r_a4b50240a5cd6908767ed980cc5005d23"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a4b50240a5cd6908767ed980cc5005d23">LootPartialItem</a> (AActor *WorldItem, <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *TargetContainer, const FGameplayTag &amp;SlotType)</td></tr>
+<tr class="separator:a4b50240a5cd6908767ed980cc5005d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31b7ef7d203c9877353bc6191077997b" id="r_a31b7ef7d203c9877353bc6191077997b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_a_world_item.html">AWorldItem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a31b7ef7d203c9877353bc6191077997b">SpawnItem</a> (UObject *WorldContext, TSubclassOf&lt; <a class="el" href="class_a_world_item.html">AWorldItem</a> &gt; WorldItemClass, const FTransform &amp;Transform)</td></tr>
 <tr class="separator:a31b7ef7d203c9877353bc6191077997b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462ac724c69166392633e5f69469ef57" id="r_a462ac724c69166392633e5f69469ef57"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a462ac724c69166392633e5f69469ef57">SelectItemByProbability</a> (const float Probability)</td></tr>
+<tr class="separator:a462ac724c69166392633e5f69469ef57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610002d9e25d4d242a3a94c09662772b" id="r_a610002d9e25d4d242a3a94c09662772b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a610002d9e25d4d242a3a94c09662772b">SelectItemByProbability_Normalized</a> (const float Probability)</td></tr>
+<tr class="separator:a610002d9e25d4d242a3a94c09662772b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a351b3bb106b5a6384377af4d01ebe" id="r_a19a351b3bb106b5a6384377af4d01ebe"><td class="memItemLeft" align="right" valign="top">static TArray&lt; <a class="el" href="struct_f_random_loot_generation_result.html">FRandomLootGenerationResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a19a351b3bb106b5a6384377af4d01ebe">GenerateRandomLoot</a> (const <a class="el" href="class_u_random_loot_generation_settings.html">URandomLootGenerationSettings</a> *LootGenerationSettings)</td></tr>
+<tr class="separator:a19a351b3bb106b5a6384377af4d01ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a779be1574b6452039393d9b35e9d51f6" id="r_a779be1574b6452039393d9b35e9d51f6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_f_gameplay_container_slot_handle.html">FGameplayContainerSlotHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a779be1574b6452039393d9b35e9d51f6">GetHandle</a> (const <a class="el" href="struct_f_gameplay_container_slot.html">FGameplayContainerSlot</a> &amp;Slot)</td></tr>
 <tr class="separator:a779be1574b6452039393d9b35e9d51f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0016f3f07f348a21563c68046f9286fc" id="r_a0016f3f07f348a21563c68046f9286fc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_f_gameplay_container_slot.html">FGameplayContainerSlot</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_container_library.html#a0016f3f07f348a21563c68046f9286fc">GetSlot</a> (const <a class="el" href="struct_f_gameplay_container_slot_handle.html">FGameplayContainerSlotHandle</a> &amp;Handle)</td></tr>
@@ -230,51 +229,6 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_u_gameplay_container_library.html">UGameplayContainerLibrary</a> </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aac604cf272cf1d14b77691044af3abb2" name="aac604cf272cf1d14b77691044af3abb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac604cf272cf1d14b77691044af3abb2">&#9670;&#160;</a></span>CalculateNormalizedPercentage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float UGameplayContainerLibrary::CalculateNormalizedPercentage </td>
-          <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>CurrentValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>MaxValue</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Calculates the normalized percentage based on the current value and the maximum value.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">CurrentValue</td><td>The current value to calculate the percentage. </td></tr>
-    <tr><td class="paramname">MaxValue</td><td>The maximum value for the calculation. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The calculated normalized percentage. </dd></dl>
-
-</div>
-</div>
 <a id="a4b8188cc380a580dfd78682e74c191ca" name="a4b8188cc380a580dfd78682e74c191ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b8188cc380a580dfd78682e74c191ca">&#9670;&#160;</a></span>CalculatePercentage()</h2>
 
@@ -320,8 +274,53 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3a62821a8ed86301faeae572d2ff8de8" name="a3a62821a8ed86301faeae572d2ff8de8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a62821a8ed86301faeae572d2ff8de8">&#9670;&#160;</a></span>CanLootItem()</h2>
+<a id="a9fa37bc02bcad658fbff31dcc8e6b28e" name="a9fa37bc02bcad658fbff31dcc8e6b28e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa37bc02bcad658fbff31dcc8e6b28e">&#9670;&#160;</a></span>CalculatePercentage_Normalized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float UGameplayContainerLibrary::CalculatePercentage_Normalized </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>CurrentValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>MaxValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calculates the normalized percentage based on the current value and the maximum value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CurrentValue</td><td>The current value to calculate the percentage. </td></tr>
+    <tr><td class="paramname">MaxValue</td><td>The maximum value for the calculation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The calculated normalized percentage. </dd></dl>
+
+</div>
+</div>
+<a id="a5e5c9919f13cbeb263401413a0856d44" name="a5e5c9919f13cbeb263401413a0856d44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e5c9919f13cbeb263401413a0856d44">&#9670;&#160;</a></span>CanLootItem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,7 +343,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const FGameplayTag&#160;</td>
+          <td class="paramtype">const FGameplayTag &amp;&#160;</td>
           <td class="paramname"><em>SlotType</em>&#160;</td>
         </tr>
         <tr>
@@ -369,6 +368,58 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if looting the item is possible, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="addedf1259966f424677c5d54430c5c2f" name="addedf1259966f424677c5d54430c5c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addedf1259966f424677c5d54430c5c2f">&#9670;&#160;</a></span>CanLootPartialItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UGameplayContainerLibrary::CanLootPartialItem </td>
+          <td>(</td>
+          <td class="paramtype">AActor *&#160;</td>
+          <td class="paramname"><em>WorldItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *&#160;</td>
+          <td class="paramname"><em>TargetContainer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FGameplayTag &amp;&#160;</td>
+          <td class="paramname"><em>SlotType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks if it is possible to loot a partial quantity of a world item from a specific slot type in the target container.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">WorldItem</td><td>The actor representing the world item to loot. </td></tr>
+    <tr><td class="paramname">TargetContainer</td><td>The gameplay container component to loot the item into. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The gameplay tag representing the type of slot to loot the item into.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if looting a partial quantity of the world item is possible, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -650,7 +701,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Data</td><td>The first Gameplay Ability Set Attribute Set. </td></tr>
-    <tr><td class="paramname">OtherData</td><td>The second Gameplay Ability Set Attribute Set. </td></tr>
+    <tr><td class="paramname">OtherData</td><td>The second Gameplay Ability Set Attribute Set.</td></tr>
   </table>
   </dd>
 </dl>
@@ -695,7 +746,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Data</td><td>The first Gameplay Ability Set Gameplay Ability. </td></tr>
-    <tr><td class="paramname">OtherData</td><td>The second Gameplay Ability Set Gameplay Ability. </td></tr>
+    <tr><td class="paramname">OtherData</td><td>The second Gameplay Ability Set Gameplay Ability.</td></tr>
   </table>
   </dd>
 </dl>
@@ -740,7 +791,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Data</td><td>The first Gameplay Ability Set Gameplay Effect. </td></tr>
-    <tr><td class="paramname">OtherData</td><td>The second Gameplay Ability Set Gameplay Effect. </td></tr>
+    <tr><td class="paramname">OtherData</td><td>The second Gameplay Ability Set Gameplay Effect.</td></tr>
   </table>
   </dd>
 </dl>
@@ -785,7 +836,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Data</td><td>The first Gameplay Ability Set Granted Handles. </td></tr>
-    <tr><td class="paramname">OtherData</td><td>The second Gameplay Ability Set Granted Handles. </td></tr>
+    <tr><td class="paramname">OtherData</td><td>The second Gameplay Ability Set Granted Handles.</td></tr>
   </table>
   </dd>
 </dl>
@@ -830,7 +881,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ContainerManager</td><td>The first Gameplay Container Manager. </td></tr>
-    <tr><td class="paramname">OtherContainerManager</td><td>The second Gameplay Container Manager. </td></tr>
+    <tr><td class="paramname">OtherContainerManager</td><td>The second Gameplay Container Manager.</td></tr>
   </table>
   </dd>
 </dl>
@@ -875,7 +926,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">OverflowingItem</td><td>The first Gameplay Container Overflowing Item. </td></tr>
-    <tr><td class="paramname">OtherOverflowingItem</td><td>The second Gameplay Container Overflowing Item. </td></tr>
+    <tr><td class="paramname">OtherOverflowingItem</td><td>The second Gameplay Container Overflowing Item.</td></tr>
   </table>
   </dd>
 </dl>
@@ -920,7 +971,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Request</td><td>The first Gameplay Container Request. </td></tr>
-    <tr><td class="paramname">OtherRequest</td><td>The second Gameplay Container Request. </td></tr>
+    <tr><td class="paramname">OtherRequest</td><td>The second Gameplay Container Request.</td></tr>
   </table>
   </dd>
 </dl>
@@ -965,7 +1016,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Slot</td><td>The first Gameplay Container Slot. </td></tr>
-    <tr><td class="paramname">OtherSlot</td><td>The second Gameplay Container Slot. </td></tr>
+    <tr><td class="paramname">OtherSlot</td><td>The second Gameplay Container Slot.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1010,7 +1061,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Info</td><td>The first Gameplay Container Slot Creation Info. </td></tr>
-    <tr><td class="paramname">OtherInfo</td><td>The second Gameplay Container Slot Creation Info. </td></tr>
+    <tr><td class="paramname">OtherInfo</td><td>The second Gameplay Container Slot Creation Info.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1055,7 +1106,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Handle</td><td>The first Gameplay Container Slot Handle. </td></tr>
-    <tr><td class="paramname">OtherHandle</td><td>The second Gameplay Container Slot Handle. </td></tr>
+    <tr><td class="paramname">OtherHandle</td><td>The second Gameplay Container Slot Handle.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1100,7 +1151,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Data</td><td>The first Gameplay Container Slot Widget Data. </td></tr>
-    <tr><td class="paramname">OtherData</td><td>The second Gameplay Container Slot Widget Data. </td></tr>
+    <tr><td class="paramname">OtherData</td><td>The second Gameplay Container Slot Widget Data.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1145,7 +1196,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">StartupItem</td><td>The first Gameplay Container Startup Item. </td></tr>
-    <tr><td class="paramname">OtherStartupItem</td><td>The second Gameplay Container Startup Item. </td></tr>
+    <tr><td class="paramname">OtherStartupItem</td><td>The second Gameplay Container Startup Item.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1190,7 +1241,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Data</td><td>The first Gameplay Equipment Actor To Spawn. </td></tr>
-    <tr><td class="paramname">OtherData</td><td>The second Gameplay Equipment Actor To Spawn. </td></tr>
+    <tr><td class="paramname">OtherData</td><td>The second Gameplay Equipment Actor To Spawn.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1235,7 +1286,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Entry</td><td>The first Gameplay Equipment Entry. </td></tr>
-    <tr><td class="paramname">OtherEntry</td><td>The second Gameplay Equipment Entry. </td></tr>
+    <tr><td class="paramname">OtherEntry</td><td>The second Gameplay Equipment Entry.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1280,7 +1331,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">EquipmentManager</td><td>The first Gameplay Equipment Manager. </td></tr>
-    <tr><td class="paramname">OtherEquipmentManager</td><td>The second Gameplay Equipment Manager. </td></tr>
+    <tr><td class="paramname">OtherEquipmentManager</td><td>The second Gameplay Equipment Manager.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1325,7 +1376,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Stat</td><td>The first Gameplay Stat. </td></tr>
-    <tr><td class="paramname">OtherStat</td><td>The second Gameplay Stat. </td></tr>
+    <tr><td class="paramname">OtherStat</td><td>The second Gameplay Stat.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1370,11 +1421,101 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">StatContainer</td><td>The first Gameplay Stat Container. </td></tr>
-    <tr><td class="paramname">OtherStatContainer</td><td>The second Gameplay Stat Container. </td></tr>
+    <tr><td class="paramname">OtherStatContainer</td><td>The second Gameplay Stat Container.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the stat containers are equal, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a58bcadbd6e860b31fa86d4a2bfaa7128" name="a58bcadbd6e860b31fa86d4a2bfaa7128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58bcadbd6e860b31fa86d4a2bfaa7128">&#9670;&#160;</a></span>EqualEqual_FRandomLootGenerationParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UGameplayContainerLibrary::EqualEqual_FRandomLootGenerationParameter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_f_random_loot_generation_parameter.html">FRandomLootGenerationParameter</a> &amp;&#160;</td>
+          <td class="paramname"><em>Data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_f_random_loot_generation_parameter.html">FRandomLootGenerationParameter</a> &amp;&#160;</td>
+          <td class="paramname"><em>OtherData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks if two <a class="el" href="struct_f_random_loot_generation_parameter.html">FRandomLootGenerationParameter</a> instances are equal.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Data</td><td>The first <a class="el" href="struct_f_random_loot_generation_parameter.html">FRandomLootGenerationParameter</a> to compare. </td></tr>
+    <tr><td class="paramname">OtherData</td><td>The second <a class="el" href="struct_f_random_loot_generation_parameter.html">FRandomLootGenerationParameter</a> to compare.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the two <a class="el" href="struct_f_random_loot_generation_parameter.html">FRandomLootGenerationParameter</a> instances are equal, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a870997d194194523f293dd7fab8e44de" name="a870997d194194523f293dd7fab8e44de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870997d194194523f293dd7fab8e44de">&#9670;&#160;</a></span>EqualEqual_FRandomLootGenerationResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UGameplayContainerLibrary::EqualEqual_FRandomLootGenerationResult </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_f_random_loot_generation_result.html">FRandomLootGenerationResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>Data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_f_random_loot_generation_result.html">FRandomLootGenerationResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>OtherData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks if two <a class="el" href="struct_f_random_loot_generation_result.html">FRandomLootGenerationResult</a> instances are equal.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Data</td><td>The first <a class="el" href="struct_f_random_loot_generation_result.html">FRandomLootGenerationResult</a> to compare. </td></tr>
+    <tr><td class="paramname">OtherData</td><td>The second <a class="el" href="struct_f_random_loot_generation_result.html">FRandomLootGenerationResult</a> to compare.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the two <a class="el" href="struct_f_random_loot_generation_result.html">FRandomLootGenerationResult</a> instances are equal, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1415,7 +1556,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Data</td><td>The first <a class="el" href="struct_f_world_item_content.html">FWorldItemContent</a> structure to compare. </td></tr>
-    <tr><td class="paramname">OtherData</td><td>The second <a class="el" href="struct_f_world_item_content.html">FWorldItemContent</a> structure to compare. </td></tr>
+    <tr><td class="paramname">OtherData</td><td>The second <a class="el" href="struct_f_world_item_content.html">FWorldItemContent</a> structure to compare.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1460,7 +1601,7 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Data</td><td>The first <a class="el" href="struct_f_world_item_instance.html">FWorldItemInstance</a> structure to compare. </td></tr>
-    <tr><td class="paramname">OtherData</td><td>The second <a class="el" href="struct_f_world_item_instance.html">FWorldItemInstance</a> structure to compare. </td></tr>
+    <tr><td class="paramname">OtherData</td><td>The second <a class="el" href="struct_f_world_item_instance.html">FWorldItemInstance</a> structure to compare.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1505,11 +1646,45 @@ template&lt;typename Enumeration &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Data</td><td>The first <a class="el" href="struct_f_world_item_template.html">FWorldItemTemplate</a> structure to compare. </td></tr>
-    <tr><td class="paramname">OtherData</td><td>The second <a class="el" href="struct_f_world_item_template.html">FWorldItemTemplate</a> structure to compare. </td></tr>
+    <tr><td class="paramname">OtherData</td><td>The second <a class="el" href="struct_f_world_item_template.html">FWorldItemTemplate</a> structure to compare.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the structures are equal, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a19a351b3bb106b5a6384377af4d01ebe" name="a19a351b3bb106b5a6384377af4d01ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a351b3bb106b5a6384377af4d01ebe">&#9670;&#160;</a></span>GenerateRandomLoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TArray&lt; <a class="el" href="struct_f_random_loot_generation_result.html">FRandomLootGenerationResult</a> &gt; UGameplayContainerLibrary::GenerateRandomLoot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_u_random_loot_generation_settings.html">URandomLootGenerationSettings</a> *&#160;</td>
+          <td class="paramname"><em>LootGenerationSettings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generates random loot based on the provided loot generation settings.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">LootGenerationSettings</td><td>The loot generation settings to use for generating random loot.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An array of <a class="el" href="struct_f_random_loot_generation_result.html">FRandomLootGenerationResult</a> containing the generated random loot. </dd></dl>
 
 </div>
 </div>
@@ -1547,6 +1722,51 @@ template&lt;typename Enumeration &gt; </div>
 
 </div>
 </div>
+<a id="a3b26d9380d6394d6a7a5c02ad190bf6e" name="a3b26d9380d6394d6a7a5c02ad190bf6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b26d9380d6394d6a7a5c02ad190bf6e">&#9670;&#160;</a></span>GetAbilitySystemFromGameplayContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UAbilitySystemComponent * UGameplayContainerLibrary::GetAbilitySystemFromGameplayContainer </td>
+          <td>(</td>
+          <td class="paramtype">const APlayerController *&#160;</td>
+          <td class="paramname"><em>PlayerController</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *&#160;</td>
+          <td class="paramname"><em>TargetContainer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieves the ability system component associated with the provided player controller and gameplay container.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">PlayerController</td><td>The player controller whose ability system component is to be retrieved. </td></tr>
+    <tr><td class="paramname">TargetContainer</td><td>The gameplay container component associated with the ability system component.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The ability system component associated with the player controller and gameplay container, if found; otherwise, returns nullptr. </dd></dl>
+
+</div>
+</div>
 <a id="acc17495cc361f98d0663791a85f854b5" name="acc17495cc361f98d0663791a85f854b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc17495cc361f98d0663791a85f854b5">&#9670;&#160;</a></span>GetAttributesMappings()</h2>
 
@@ -1570,7 +1790,8 @@ template&lt;typename Enumeration &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Get the mapping of gameplay attributes to their relevant slot types.</p>
-<dl class="section return"><dt>Returns</dt><dd>A map of gameplay attributes to slot types. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A map of gameplay attributes to slot types.</dd></dl>
+<p>Copyright (C) 2024 Nazake. All Rights Reserved. </p>
 
 </div>
 </div>
@@ -2305,8 +2526,8 @@ template&lt;typename Enumeration &gt; </div>
 
 </div>
 </div>
-<a id="ab168aa986b72b39c9a0d9fac6b9a0180" name="ab168aa986b72b39c9a0d9fac6b9a0180"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab168aa986b72b39c9a0d9fac6b9a0180">&#9670;&#160;</a></span>LootItem()</h2>
+<a id="a14c7ec0c806755a4f721df39863cd7b7" name="a14c7ec0c806755a4f721df39863cd7b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14c7ec0c806755a4f721df39863cd7b7">&#9670;&#160;</a></span>LootItem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2329,7 +2550,7 @@ template&lt;typename Enumeration &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const FGameplayTag&#160;</td>
+          <td class="paramtype">const FGameplayTag &amp;&#160;</td>
           <td class="paramname"><em>SlotType</em>&#160;</td>
         </tr>
         <tr>
@@ -2353,6 +2574,59 @@ template&lt;typename Enumeration &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a4b50240a5cd6908767ed980cc5005d23" name="a4b50240a5cd6908767ed980cc5005d23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b50240a5cd6908767ed980cc5005d23">&#9670;&#160;</a></span>LootPartialItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UGameplayContainerLibrary::LootPartialItem </td>
+          <td>(</td>
+          <td class="paramtype">AActor *&#160;</td>
+          <td class="paramname"><em>WorldItem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_u_gameplay_container_component.html">UGameplayContainerComponent</a> *&#160;</td>
+          <td class="paramname"><em>TargetContainer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FGameplayTag &amp;&#160;</td>
+          <td class="paramname"><em>SlotType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Attempts to loot a specific world item from the specified slot type in the target container.</p>
+<dl class="section note"><dt>Note</dt><dd>This will attempt to loot as much as the target container can carry, not necessarily all of the world item content.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">WorldItem</td><td>The world item actor to be looted. </td></tr>
+    <tr><td class="paramname">TargetContainer</td><td>The target container component into which the world item is intended to be looted. </td></tr>
+    <tr><td class="paramname">SlotType</td><td>The gameplay tag representing the slot type for the world item.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true, if anything was looted. False otherwise </dd></dl>
 
 </div>
 </div>
@@ -2424,6 +2698,118 @@ template&lt;typename Enumeration &gt; </div>
 
 </div>
 </div>
+<a id="a462ac724c69166392633e5f69469ef57" name="a462ac724c69166392633e5f69469ef57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462ac724c69166392633e5f69469ef57">&#9670;&#160;</a></span>SelectItemByProbability()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UGameplayContainerLibrary::SelectItemByProbability </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>Probability</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Selects an item based on the given probability value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Probability</td><td>The normalized probability value to use for selection.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the item is selected based on the probability, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a610002d9e25d4d242a3a94c09662772b" name="a610002d9e25d4d242a3a94c09662772b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a610002d9e25d4d242a3a94c09662772b">&#9670;&#160;</a></span>SelectItemByProbability_Normalized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UGameplayContainerLibrary::SelectItemByProbability_Normalized </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>Probability</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Selects an item based on the given probability value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Probability</td><td>The probability value to use for selection.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the item is selected based on the probability, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a17f0adad0e140ac9f42c6eefe213ce4f" name="a17f0adad0e140ac9f42c6eefe213ce4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17f0adad0e140ac9f42c6eefe213ce4f">&#9670;&#160;</a></span>SendGameplayContainerRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UGameplayContainerLibrary::SendGameplayContainerRequest </td>
+          <td>(</td>
+          <td class="paramtype">UObject *&#160;</td>
+          <td class="paramname"><em>WorldContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_f_gameplay_container_request.html">FGameplayContainerRequest</a> &amp;&#160;</td>
+          <td class="paramname"><em>Data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sends a gameplay container request to activate gameplay abilities for certain operations.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">WorldContext</td><td>The world context object. </td></tr>
+    <tr><td class="paramname">Data</td><td>The gameplay container request data to send. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a31b7ef7d203c9877353bc6191077997b" name="a31b7ef7d203c9877353bc6191077997b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31b7ef7d203c9877353bc6191077997b">&#9670;&#160;</a></span>SpawnItem()</h2>
 
@@ -2477,17 +2863,13 @@ template&lt;typename Enumeration &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Public/Core/<a class="el" href="_gameplay_container_library_8h_source.html">GameplayContainerLibrary.h</a></li>
-<li>Private/Core/<a class="el" href="_gameplay_container_library_8cpp.html">GameplayContainerLibrary.cpp</a></li>
+<li>GameplayContainers/Public/Core/<a class="el" href="_gameplay_container_library_8h_source.html">GameplayContainerLibrary.h</a></li>
+<li>GameplayContainers/Private/Core/<a class="el" href="_gameplay_container_library_8cpp.html">GameplayContainerLibrary.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="class_u_gameplay_container_library.html">UGameplayContainerLibrary</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
 </body>
 </html>

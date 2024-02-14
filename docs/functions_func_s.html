@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,8 +20,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="gc.ico"/></td>
   <td id="projectalign">
-   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.1</span>
    </div>
   </td>
  </tr>
@@ -51,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_func_s.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -92,6 +73,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <div class="textblock">Here is a list of all functions with links to the classes they belong to:</div>
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>SelectItemByProbability()&#160;:&#160;<a class="el" href="class_u_gameplay_container_library.html#a462ac724c69166392633e5f69469ef57">UGameplayContainerLibrary</a></li>
+<li>SelectItemByProbability_Normalized()&#160;:&#160;<a class="el" href="class_u_gameplay_container_library.html#a610002d9e25d4d242a3a94c09662772b">UGameplayContainerLibrary</a></li>
+<li>SendGameplayContainerRequest()&#160;:&#160;<a class="el" href="class_u_gameplay_container_library.html#a17f0adad0e140ac9f42c6eefe213ce4f">UGameplayContainerLibrary</a></li>
 <li>SendRequest()&#160;:&#160;<a class="el" href="class_u_gameplay_container_subsystem.html#ac564fba1bc98956a79130a65f2f2acf1">UGameplayContainerSubsystem</a></li>
 <li>Server_ActivateSlot()&#160;:&#160;<a class="el" href="class_u_hotbar_component.html#a8d58f8c7cc7f77f0e9841c79b632e948">UHotbarComponent</a></li>
 <li>Server_DeactivateSlot()&#160;:&#160;<a class="el" href="class_u_hotbar_component.html#aadacdf25b8c759fd0c8fdd418a57c843">UHotbarComponent</a></li>
@@ -114,13 +98,17 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>SetOwnerItemInstance()&#160;:&#160;<a class="el" href="class_u_gameplay_equipment_instance.html#acb7f6687b924e7ea91217038816d397e">UGameplayEquipmentInstance</a></li>
 <li>SetParentWidget()&#160;:&#160;<a class="el" href="class_u_gameplay_container_notification_slot_widget.html#a2e407cdb01ef7ad62283d4093c992c6f">UGameplayContainerNotificationSlotWidget</a></li>
 <li>SetQuantity()&#160;:&#160;<a class="el" href="struct_f_gameplay_container_overflowing_item.html#a95d1fd1f0d442622d4f4a6b906a537f2">FGameplayContainerOverflowingItem</a>, <a class="el" href="struct_f_gameplay_container_slot.html#a77bfbff419a584bafb6c6b11969f0ab0">FGameplayContainerSlot</a></li>
+<li>SetQuantityWithoutClamping()&#160;:&#160;<a class="el" href="struct_f_gameplay_container_slot.html#a47a8d7135fd8e21af33c228dfdbe1666">FGameplayContainerSlot</a></li>
 <li>SetSlot()&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot_data_object.html#ab8b0217f78d4f12e22416ab0dd01cbd9">UGameplayContainerSlotDataObject</a></li>
 <li>SetSlotType()&#160;:&#160;<a class="el" href="struct_f_gameplay_container_overflowing_item.html#a0e96de0eef9b302e940fc4937b25087e">FGameplayContainerOverflowingItem</a></li>
 <li>SetSourceDataObject()&#160;:&#160;<a class="el" href="class_u_gameplay_container_slot___drag_drop_operation.html#ad72cb14dd13dda91a01da47712ed2a9f">UGameplayContainerSlot_DragDropOperation</a></li>
 <li>SetStat()&#160;:&#160;<a class="el" href="struct_f_gameplay_stat.html#a40fab06c22cb769590bb23f1c40800ec">FGameplayStat</a></li>
 <li>SetStatCurrentStack()&#160;:&#160;<a class="el" href="struct_f_gameplay_stat_container.html#a2f2df4bcc470aa5aff76ef66697707c4">FGameplayStatContainer</a>, <a class="el" href="class_u_gameplay_item_instance.html#a009ad4a6da137968024d9e02c15c2ca3">UGameplayItemInstance</a></li>
 <li>SetStatMaxStackSize()&#160;:&#160;<a class="el" href="struct_f_gameplay_stat_container.html#a97aaff59b5478c897a6f03af7636c1a6">FGameplayStatContainer</a>, <a class="el" href="class_u_gameplay_item_instance.html#aa15a278eaa696f50bf1087f613d4c6b7">UGameplayItemInstance</a></li>
+<li>ShouldOnlyApplyCostOnHit()&#160;:&#160;<a class="el" href="class_u_ability_cost.html#a33ea0730c3007fac22b4acff18aec19a">UAbilityCost</a></li>
 <li>ShutdownModule()&#160;:&#160;<a class="el" href="class_f_gameplay_containers_module.html#ad077b046b1d67bb2bacad6ba6bd8f3e8">FGameplayContainersModule</a></li>
+<li>Sort()&#160;:&#160;<a class="el" href="class_u_gameplay_container_item_sorting_option.html#a321aa093f0e8ae7c5ee4080683e76b2d">UGameplayContainerItemSortingOption</a>, <a class="el" href="class_u_gameplay_container_item_sorting_option___by_name.html#adb588e3ce3e71b24d1f30de8ffd1eab1">UGameplayContainerItemSortingOption_ByName</a></li>
+<li>SortItems()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#abfa8209478d48913b6d3eca4f832c3bf">UGameplayContainerComponent</a>, <a class="el" href="class_u_gameplay_container_task___sort_items.html#a21f404e1141e593f38b0c570aa1bfb24">UGameplayContainerTask_SortItems</a></li>
 <li>SpawnEquipmentActors()&#160;:&#160;<a class="el" href="class_u_gameplay_equipment_instance.html#a637a35163f69b99925b99ba9f0d45468">UGameplayEquipmentInstance</a></li>
 <li>SpawnItem()&#160;:&#160;<a class="el" href="class_u_gameplay_container_library.html#a31b7ef7d203c9877353bc6191077997b">UGameplayContainerLibrary</a></li>
 <li>SplitItemStack()&#160;:&#160;<a class="el" href="class_u_gameplay_container_task___split_item_stack.html#aeccf9e06b297195a661564f5f57640c6">UGameplayContainerTask_SplitItemStack</a></li>
@@ -134,12 +122,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>SwapItemsBetweenSlots()&#160;:&#160;<a class="el" href="class_u_gameplay_container_component.html#a82856168fd7bec484c2f1153512eda10">UGameplayContainerComponent</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
 </body>
 </html>

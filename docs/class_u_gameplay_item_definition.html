@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,8 +20,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="gc.ico"/></td>
   <td id="projectalign">
-   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">GameplayContainers<span id="projectnumber">&#160;1.1</span>
    </div>
   </td>
  </tr>
@@ -50,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_u_gameplay_item_definition.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,6 +68,7 @@ $(document).ready(function(){initNavTree('class_u_gameplay_item_definition.html'
 </div>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -113,6 +94,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7571f9361a1e0ccf8766d93e6670ade8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a131c98924bcd27ea36d7b45e95511ee1" id="r_a131c98924bcd27ea36d7b45e95511ee1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_item_definition.html#a131c98924bcd27ea36d7b45e95511ee1">IsSupportedForNetworking</a> () const override</td></tr>
 <tr class="separator:a131c98924bcd27ea36d7b45e95511ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0051aea2c034c53264c8a1cbbe2c8bc" id="r_af0051aea2c034c53264c8a1cbbe2c8bc"><td class="memItemLeft" align="right" valign="top">virtual FPrimaryAssetId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_item_definition.html#af0051aea2c034c53264c8a1cbbe2c8bc">GetPrimaryAssetId</a> () const override</td></tr>
+<tr class="separator:af0051aea2c034c53264c8a1cbbe2c8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd9929aec300d8c3e94d62082875a6a" id="r_accd9929aec300d8c3e94d62082875a6a"><td class="memItemLeft" align="right" valign="top">FGameplayTagContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_item_definition.html#accd9929aec300d8c3e94d62082875a6a">GetFragmentsOwnedGameplayTags</a> ()</td></tr>
+<tr class="separator:accd9929aec300d8c3e94d62082875a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c62416e9fd1f3470c4562be024fc69" id="r_ad0c62416e9fd1f3470c4562be024fc69"><td class="memItemLeft" align="right" valign="top">FGameplayTagContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_item_definition.html#ad0c62416e9fd1f3470c4562be024fc69">GetFragmentOwnedGameplayTags</a> (TSubclassOf&lt; <a class="el" href="class_u_gameplay_item_fragment.html">UGameplayItemFragment</a> &gt; FragmentClass) const</td></tr>
+<tr class="separator:ad0c62416e9fd1f3470c4562be024fc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8ac56670eab097c3d4f26b161bf19ab" id="r_af8ac56670eab097c3d4f26b161bf19ab"><td class="memItemLeft" align="right" valign="top">TSubclassOf&lt; <a class="el" href="class_u_gameplay_item_instance.html">UGameplayItemInstance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_item_definition.html#af8ac56670eab097c3d4f26b161bf19ab">GetInstanceClass</a> () const</td></tr>
 <tr class="separator:af8ac56670eab097c3d4f26b161bf19ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa54bd4a98f355d162536fde2488a5243" id="r_aa54bd4a98f355d162536fde2488a5243"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_gameplay_item_definition.html#aa54bd4a98f355d162536fde2488a5243">CanBeStacked</a> () const</td></tr>
@@ -160,7 +147,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Default constructor for the Gameplay Item Definition. </p>
+<p>Default constructor for the Gameplay Item Definition.</p>
+<p>Copyright (C) 2024 Nazake. All Rights Reserved. </p>
 
 </div>
 </div>
@@ -245,6 +233,32 @@ template&lt;typename FragmentType &gt; </div>
 
 </div>
 </div>
+<a id="ad0c62416e9fd1f3470c4562be024fc69" name="ad0c62416e9fd1f3470c4562be024fc69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0c62416e9fd1f3470c4562be024fc69">&#9670;&#160;</a></span>GetFragmentOwnedGameplayTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FGameplayTagContainer UGameplayItemDefinition::GetFragmentOwnedGameplayTags </td>
+          <td>(</td>
+          <td class="paramtype">TSubclassOf&lt; <a class="el" href="class_u_gameplay_item_fragment.html">UGameplayItemFragment</a> &gt;&#160;</td>
+          <td class="paramname"><em>FragmentClass</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieves the owned gameplay tags associated with a specific fragment class of this gameplay item.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">FragmentClass</td><td>The class of the fragment for which owned gameplay tags are retrieved.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A gameplay tag container containing the owned gameplay tags of the specified fragment class attached to this gameplay item. </dd></dl>
+
+</div>
+</div>
 <a id="ad1114b3a104e79ef010513e4b0c24010" name="ad1114b3a104e79ef010513e4b0c24010"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1114b3a104e79ef010513e4b0c24010">&#9670;&#160;</a></span>GetFragments()</h2>
 
@@ -261,6 +275,25 @@ template&lt;typename FragmentType &gt; </div>
 </div><div class="memdoc">
 <p>Retrieves an array of fragments associated with this Gameplay Item Definition.</p>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the array of fragments. </dd></dl>
+
+</div>
+</div>
+<a id="accd9929aec300d8c3e94d62082875a6a" name="accd9929aec300d8c3e94d62082875a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd9929aec300d8c3e94d62082875a6a">&#9670;&#160;</a></span>GetFragmentsOwnedGameplayTags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FGameplayTagContainer UGameplayItemDefinition::GetFragmentsOwnedGameplayTags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieves the owned gameplay tags associated with all fragments of this gameplay item.</p>
+<dl class="section return"><dt>Returns</dt><dd>A gameplay tag container containing the owned gameplay tags of all fragments attached to this gameplay item. </dd></dl>
 
 </div>
 </div>
@@ -316,6 +349,31 @@ template&lt;typename FragmentType &gt; </div>
           <td>(</td>
           <td class="paramtype">FGameplayTagContainer &amp;&#160;</td>
           <td class="paramname"><em>TagContainer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0051aea2c034c53264c8a1cbbe2c8bc" name="af0051aea2c034c53264c8a1cbbe2c8bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0051aea2c034c53264c8a1cbbe2c8bc">&#9670;&#160;</a></span>GetPrimaryAssetId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FPrimaryAssetId UGameplayItemDefinition::GetPrimaryAssetId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -496,17 +554,13 @@ template&lt;typename FragmentType &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Public/Items/<a class="el" href="_gameplay_item_definition_8h_source.html">GameplayItemDefinition.h</a></li>
-<li>Private/Items/<a class="el" href="_gameplay_item_definition_8cpp.html">GameplayItemDefinition.cpp</a></li>
+<li>GameplayContainers/Public/Items/<a class="el" href="_gameplay_item_definition_8h_source.html">GameplayItemDefinition.h</a></li>
+<li>GameplayContainers/Private/Items/<a class="el" href="_gameplay_item_definition_8cpp.html">GameplayItemDefinition.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="class_u_gameplay_item_definition.html">UGameplayItemDefinition</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
 </body>
 </html>
