@@ -8,7 +8,8 @@ var indexSectionsWithContent =
   5: "e",
   6: "acelruw",
   7: "fgu",
-  8: "aeghiltw"
+  8: "aeghiltw",
+  9: "lt"
 };
 
 var indexSectionNames =
@@ -21,7 +22,8 @@ var indexSectionNames =
   5: "enums",
   6: "enumvalues",
   7: "related",
-  8: "defines"
+  8: "defines",
+  9: "pages"
 };
 
 var indexSectionLabels =
@@ -34,6 +36,7 @@ var indexSectionLabels =
   5: "Enumerations",
   6: "Enumerator",
   7: "Friends",
-  8: "Macros"
+  8: "Macros",
+  9: "Pages"
 };
 
